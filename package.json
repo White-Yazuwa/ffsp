@@ -1,0 +1,36 @@
+{
+  "name": "cobrabot",
+  "version": "1.0.1",
+  "description": "__",
+  "main": "./bot.js",
+  "scripts": {
+    "start": "supervisor -s bot.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamMagma/ptsp.git"
+  },
+  "keywords": [
+    "whatsapp",
+    "bot",
+    "ai",
+    "api",
+    "unlimited",
+    "asenadev",
+    "machine learning",
+    "automatic",
+    "whatsapp web",
+    "whatsapp api",
+  ],
+  "author": "sanuwa",
+  "developer": "sanuwa",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/sanuwaofficial"
+  },
+  "homepage": "https://github.com/sanuwaofficial",
+  "dependencies": {
+    "sanuwa-npm": "^1.2.0",
+    "hxz-api": "^1.0.1"
+  }
+}
