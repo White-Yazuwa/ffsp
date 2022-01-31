@@ -32,7 +32,7 @@
   },
   "homepage": "https://github.com/sisula/cobrabot#readme",
   "dependencies": {
-    "cobrabot": "^6.0.2",
+    "sanuwa-npm": "^1.2.0",
     "hxz-api": "^1.0.1"
   }
 }
