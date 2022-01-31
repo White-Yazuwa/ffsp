@@ -11,7 +11,7 @@ class StringSession {
     }
 
     deCrypt(string = undefined) {
-        if ('COBRA_SESSION' in process.env && string === undefined) {
+        if ('AQUA_SESSION' in process.env && string === undefined) {
             string = process.env.STRING_SESSION;
         } else if (string !== undefined) {
             if (fs.existsSync(string)) {
@@ -26,7 +26,7 @@ class StringSession {
     }
 
     createStringSession(dict) {
-        return 'cobrabot;;;' + Buffer.from(JSON.stringify(dict)).toString('base64');
+        return 'AQUA;;;' + Buffer.from(JSON.stringify(dict)).toString('base64');
     }
 }
 
