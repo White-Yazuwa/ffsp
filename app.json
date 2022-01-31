@@ -1,15 +1,15 @@
 
 {
-    "name": "COBARABOT1",
-    "description": "COBRA  - Makes it easy and fun to use Whatsapp.",
-    "logo": "https://i.hizliresim.com/9tg3x8j.jpg",
-    "keywords": ["whatsapp", "userbot", "cobra", "WhatsAsena", "bot", "api", "ai"],
-    "repository": "https://github.com/Sf0gmailcomceb5ace3/vytyvtdtsresdyhf",
-    "website":   "https://t.me/SisulaR",
-    "success_url": "https://t.me/",
+    "name": "Aquabot",
+    "description": "AQUABOT  - Makes it easy and fun to use Whatsapp.",
+    "logo": "https://telegra.ph/file/2db9be44807a9a76f38b3.jpg",
+    "keywords": ["whatsapp", "userbot", "aqua", "WhatsAsena", "bot", "api", "ai"],
+    "repository": "https://github.com/iamMagma/ptsp",
+    "website":   "https://sanuwa-api.herokuapp.com/",
+    "success_url": "https://sanuwa-api.herokuapp.com/",
     "stack": "container",
     "env": {
-        "COBRA_SESSION": {
+        "AQUA_SESSION": {
             "description": "Qr කේතය scan කළ පසුව ලැබෙන කේතයන්.",
             "required": true
         },
