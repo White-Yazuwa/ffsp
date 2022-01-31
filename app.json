@@ -1,0 +1,215 @@
+
+{
+    "name": "COBARABOT1",
+    "description": "COBRA  - Makes it easy and fun to use Whatsapp.",
+    "logo": "https://i.hizliresim.com/9tg3x8j.jpg",
+    "keywords": ["whatsapp", "userbot", "cobra", "WhatsAsena", "bot", "api", "ai"],
+    "repository": "https://github.com/Sf0gmailcomceb5ace3/vytyvtdtsresdyhf",
+    "website":   "https://t.me/SisulaR",
+    "success_url": "https://t.me/",
+    "stack": "container",
+    "env": {
+        "COBRA_SESSION": {
+            "description": "Qr කේතය scan කළ පසුව ලැබෙන කේතයන්.",
+            "required": true
+        },
+        "SUDO": {
+            "description": " ඔබ එය භාවිතා කරන්නේ කෙසේදැයි නොදන්නේ නම් හිස්ව තබන්න! සුඩෝ මාදිලිය; ඔබගේ අංකය ජාත්‍යන්තර අංකයක් විය යුතුය. එබැවින් රටේ කේතයෙන් පසුව ඔබේ අංකය තිබිය යුතුය. උදාහරණය: 947xxxxxxxx (Sri lanka අංකය 94)",
+            "required": false
+        },
+        "LANGUAGE": {
+            "description": "Bot භාෂාව.සිංහල භාෂාව සඳහා HI ලෙස සඳහන් කරන්න.",
+            "required": true,
+            "value": "SI"
+            
+        },
+        "SONG_DOWN": {
+            "description": "ගීත Download කිරීමේදී ලැබෙන පණිවිඩය වෙනස් කිරීම!... මෙය අත්‍යවශ්‍යම නොවේ",
+            "required": true,
+            "value": "*♦️ ඔබේ ගීතය Download කරමින් පවතී...*"
+            
+        },
+        "SONG_UP": {
+            "description": "ගීත Upload කිරීමේදී ලැබෙන පණිවිඩය වෙනස් කිරීම!... මෙය අත්‍යවශ්‍යම නොව",
+            "required": true,
+            "value": "*♦️ ඔබේ ගීතය Upload කරමින් පවතී...*"
+            
+        },
+        "VIDEO_DOWN": {
+            "description": "වීඩියෝ Download කිරීමේදී ලැබෙන පණිවිඩය වෙනස් කිරීම!... මෙය අත්‍යවශ්‍යම නොව",
+            "required": true,
+            "value": "*♦️ ඔබේ වීඩියෝව Download කරමින් පවතී...*"
+            
+        },
+        "VIDEO_UP": {
+            "description": "වීඩියෝ Upload කිරීමේදී ලැබෙන පණිවිඩය වෙනස් කිරීම!... මෙය අත්‍යවශ්‍යම නොව",
+            "required": true,
+            "value": "*♦️ ඔබේ වීඩියෝව Upload කරමින් පවතී...*"
+            
+        },
+        "CMDP_MSG": {
+            "description": "Command panel හි ඉහළ ඇති මාතෘකාව වෙනස් කිරීමට (private)",
+            "required": true,
+            "value": "default"        
+        },
+        "LOGOPK_IMG": {
+            "description": "Logo Pack එකේ ඉහළ ලොගො වෙනස් කිරීමට",
+            "required": true,
+            "value": "https://telegra.ph/file/a1b5345cf2bb012740646.jpg"
+
+        },
+        "ANTİ_LİNK": {
+            "description": ". Link Blocking System.",
+            "required": true,
+            "value": "false"
+        },
+        "AUTO_BİO": {
+            "description": ". Set true for auto date, time in biography.",
+            "required": true,
+            "value": "false"
+        },
+        "HANDLERS": {
+            "description": " Bot ගේ ක්‍රියාකාරිත්වය සඳහා යෙදිය යුතු සලකුනු.",
+            "required": true,
+            "value": "^[.!;]"
+        },
+        "FULL_EVA": {
+            "description": " Turn your account into a chatbot!",
+            "required": true,
+            "value": "false"
+        },
+        "NO_LOG": {
+            "description": " Set true if you don't want to see error log.",
+            "required": true,
+            "value": "false"
+        },
+        "SEND_READ": {
+            "description": " Bot message seen කළාද නැතිද යන්න පරිශීලකට පෙන්විය යුතුද?",
+            "required": true,
+            "value": "true"
+        },
+        "HEROKU": {
+            "description": " If it is running in Heroku, type true.",
+            "required": true,
+            "value": "true"
+        },
+        "HEROKU_API_KEY": {
+            "description": " https://dashboard.heroku.com/account මෙම link ක්ලික් කරන්න. API key සඳහා පහළට scroll කරන්න. ඉන්පසු Reveal බොත්තම ක්ලික් කරන්න. එම API key copy කර පහත හිස් කොටුව paste කරන්න.y.",
+            "required": true
+        },
+        "MUTE_MESSAGE": {
+            "description": " Group එකක් mute කිරිමෙදි ලැබෙන පනිවිඩය. ඔබට මෙම පණිවිඩය වෙනස් කිරීමට අවශ්‍ය නැතිනම් default ටයිප් කරන්න.",
+            "required": false,
+            "value": "default"
+        },
+        "BLOCK_CHAT": {
+            "description": "බොට් වැඩ නොකරන චැට් එක තෝරන්න. Ex: 947xxxxxxxx && 947xxxxxxxx හෝ 947xxxxxxxx,947xxxxxxxx",
+            "required": false,
+            "value": "false"
+        },
+        "UNMUTE_MESSAGE": {
+            "description": " Group එකක් unmute කිරිමෙදි ලැබෙන පනිවිඩය.",
+            "required": false,
+            "value": "default"
+        },
+        "BLOCK_MESSAGE": {
+            "description": " වෙනස් කළ හැකි චැට් block දැනුම්දීම. ඔබට මෙම පණිවිඩය වෙනස් කිරීමට අවශ්‍ය නැතිනම් default ටයිප් කරන්න.",
+            "required": false,
+            "value": "default"
+        },
+        "UNBLOCK_MESSAGE": {
+            "description": " වෙනස් කළ හැකි චැට් unblock දැනුම්දීම. ඔබට මෙම පණිවිඩය වෙනස් කිරීමට අවශ්‍ය නැතිනම් default ටයිප් කරන්න.",
+            "required": false,
+            "value": "default"
+        },
+        "WORK_TYPE": {
+            "description": "Bot වැඩ කරන ක්රමය. ඔබ “public” භාවිතා කරන්නේ නම්, සෑම කෙනෙකුටම bot භාවිතා කළ හැකිය. ඔබ “private” භාවිතා කරන්නේ නම්, ඔබේ bot භාවිතා කළ හැක්කේ ඔබට පමණි.",
+            "required": true,
+            "value": "private"
+        },
+        "HEROKU_APP_NAME": {
+            "description": ". ඉහත App name එකම යොදන්න.",
+            "required": true
+        },
+        "DEBUG": {
+            "description": "ඔබ මෙය නොදන්නේ නම්. එය අත්හරින්න.",
+            "required": true,
+            "value": "false"
+        },
+        "REMOVE_BG_API_KEY": {
+            "description": "remove bg api keys. https://remove.bg",
+            "required": false
+        },
+        "ALIVE_MESSAGE": {
+            "description": "Bot online ද නැද්ද යන්න පරීක්ෂා කරන විට ලැබෙන මැසේජ් එක. මෙය වෙනස් කිරිමට අත්‍යාවශ්‍යම නොවේ.",
+            "required": false,
+            "value": "default"
+        },
+        "ALIVE_LOGO": {
+            "description": "Alive message පින්තූරය වෙනස් කිරීම සඳහා ඔබගේ image link පහත සඳහන් කරන්න. (ඔබට අවශ්‍ය පින්තුරය https://imgbb.com වෙබ්සයිට් හි upload කර එම ලින්ක් මෙහි යොදන්න.)",
+            "required": true,
+            "value": "https://telegra.ph/file/94e26aec7db113b927ab3.mp4"
+        },
+        "WELCOME_GIF": {
+            "description": "Welcome message video වෙනස් කිරීම සඳහා ඔබගේ video link පහත සඳහන් කරන්න.(ඔබට අවශ්‍ය video එක https://www.mailboxdrive.com/upload/ වෙබ්සයිට් හි upload කර එම ලින්ක් මෙහි යොදන්න.)",
+            "required": true,
+            "value": "https://tinyurl.com/queenamdi-welcome"
+        },
+        "BYE_GIF": {
+            "description": "Goodbye message video වෙනස් කිරීම සඳහා ඔබගේ video link පහත සඳහන් කරන්න.(ඔබට අවශ්‍ය video එක https://www.mailboxdrive.com/upload/ වෙබ්සයිට් හි upload කර එම ලින්ක් මෙහි යොදන්න.)",
+            "required": true,
+            "value": "https://tinyurl.com/queenamdi-goodbye"
+        },
+        "BAN_MESSAGE": {
+            "description": "යම් කෙනෙකු ඔබ .ban ලෙස කොමාන්ඩ් කර remove කලවිට ලැබෙන message එක. ඔබට මෙම පණිවිඩය වෙනස් කිරීමට අවශ්‍ය නැතිනම් default ටයිප් කරන්න.",
+            "required": false,
+            "value": "default"
+        },
+        "ADD_MESSAGE": {
+            "description": "ඔබට මෙම පණිවිඩය වෙනස් කිරීමට අවශ්‍ය නැතිනම් default ටයිප් කරන්න.",
+            "required": false,
+            "value": "default"
+        },
+        "KICKME_MESSAGE": {
+            "description": "ඔබට මෙම පණිවිඩය වෙනස් කිරීමට අවශ්‍ය නැතිනම් default ටයිප් කරන්න.",
+            "required": false,
+            "value": "default"
+        },
+        "PROMOTE_MESSAGE": {
+            "description": "ඔබට මෙම පණිවිඩය වෙනස් කිරීමට අවශ්‍ය නැතිනම් default ටයිප් කරන්න.",
+            "required": false,
+            "value": "default"
+        },
+        "DEMOTE_MESSAGE": {
+            "description": "ඔබට මෙම පණිවිඩය වෙනස් කිරීමට අවශ්‍ය නැතිනම් default ටයිප් කරන්න.",
+            "required": false,
+            "value": "default"
+        },
+        "AFK_MESSAGE": {
+            "description": "ඔබට මෙම පණිවිඩය වෙනස් කිරීමට අවශ්‍ය නැතිනම් default ටයිප් කරන්න.",
+            "required": false,
+            "value": "default"
+        },
+        "GAN_IMAGE": {
+            "description": " Type image link for Gan Style plugin.",
+            "required": true,
+            "value": "https://i.hizliresim.com/loUtAb.jpg"
+        },
+        "NO_ONLINE": {
+            "description": "මෙය වෙනස් කිරිමට අත්‍යාවශ්‍යම නොවේ.",
+            "required": false,
+            "value": "true"
+        },
+        "COFFEEHOUSE_": {
+            "description": "එය අත්හරින්න. අපි ඔබට මෙය ලබා දෙනවා.",
+            "required": false,
+            "value": "true"
+        }
+    },
+    "addons": [{
+      "plan": "heroku-postgresql"
+    }],
+    "buildpacks": [{
+      "url": "heroku-community/apt"
+      }]
+  }
