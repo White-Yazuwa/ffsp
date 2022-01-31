@@ -1,6 +1,6 @@
 {
-  "name": "cobrabot",
-  "version": "1.0.1",
+  "name": "aquabot",
+  "version": "1.0.0",
   "description": "__",
   "main": "./bot.js",
   "scripts": {
