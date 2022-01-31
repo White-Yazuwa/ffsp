@@ -1,19 +1,20 @@
 {
-  "name": "aquabot",
-  "version": "1.0.0",
-  "description": "__",
-  "main": "./bot.js",
+  "name": "cobrabot",
+  "version": "1.0.1",
+  "description": "cobrabot happy for whatsapp.",
+  "main": "./wabotcobra/cbot.js",
   "scripts": {
-    "start": "supervisor -s bot.js"
+    "start": "supervisor -s cbot.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/iamMagma/ptsp.git"
+    "url": "git+https://github.com/sisula/cobrabot.git"
   },
   "keywords": [
     "whatsapp",
     "bot",
     "ai",
+    "cobra",
     "api",
     "unlimited",
     "asenadev",
@@ -21,16 +22,17 @@
     "automatic",
     "whatsapp web",
     "whatsapp api",
+    "cobrabot"
   ],
-  "author": "sanuwa",
-  "developer": "sanuwa",
+  "author": "sisula",
+  "developer": "sisula",
   "license": "GPL-3.0-or-later",
   "bugs": {
-    "url": "https://github.com/sanuwaofficial"
+    "url": "https://github.com/sisula/cobrabot/issues"
   },
-  "homepage": "https://github.com/sanuwaofficial",
+  "homepage": "https://github.com/sisula/cobrabot#readme",
   "dependencies": {
-    "sanuwa-npm": "^1.2.0",
+    "cobrabot": "^6.0.2",
     "hxz-api": "^1.0.1"
   }
 }
