@@ -19,7 +19,7 @@ DEBUG = process.env.DEBUG === undefined ? false : convertToBool(process.env.DEBU
 module.exports = {
     VERSION: 'v1.2 pro',
     CHANNEL: 'https://t.me/',
-    SESSION: process.env.AQUA_SESSION === undefined ? '' : process.env.COBRA_SESSION,
+    SESSION: process.env.AQUA_SESSION === undefined ? '' : process.env.AQUA_SESSION,
     ANTİLİNK: process.env.ANTİ_LİNK === undefined ? 'false' : process.env.ANTİ_LİNK,
     ANTIGROUP: process.env.ANTIGRP_LINK === undefined ? 'false' : process.env.ANTIGRP_LINK,
     VOICEEVA: process.env.VOICE_EVA === undefined ? 'false' : process.env.VOICE_EVA,
