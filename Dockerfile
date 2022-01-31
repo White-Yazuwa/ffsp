@@ -7,4 +7,4 @@ RUN yarn add supervisor -g
 RUN yarn install --no-audit
 
 
-CMD ["node", "cbot.js"]
+CMD ["node", "bot.js"]
