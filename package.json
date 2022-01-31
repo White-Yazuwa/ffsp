@@ -4,7 +4,7 @@
   "description": "cobrabot happy for whatsapp.",
   "main": "/Mizuki/bot.js",
   "scripts": {
-    "start": "supervisor -s cbot.js"
+    "start": "supervisor -s bot.js"
   },
   "repository": {
     "type": "git",
