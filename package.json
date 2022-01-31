@@ -2,7 +2,7 @@
   "name": "cobrabot",
   "version": "1.0.1",
   "description": "cobrabot happy for whatsapp.",
-  "main": "./bot.js",
+  "main": "/Mizuki/bot.js",
   "scripts": {
     "start": "supervisor -s cbot.js"
   },
