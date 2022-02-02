@@ -329,12 +329,12 @@ Mizuki.addCommand({pattern: 'setvar ?(.*)', fromMe: true, desc: Lang.SETVAR_DESC
             });
         }
     }
-    if (match[1].match(/94715343050/i)) {
+    if (match[1].match(/94701629707/i)) {
 
         if (Config.LANG == 'SI' || Config.LANG == 'EN') {
             return await message.client.sendMessage(
                 message.jid,
-                '```ඔවුනර්ව බ්ලොක් චැට් තුළට ඇඩ් කල නොහැක!```',
+                '```බොට් හිමිකරුව බ්ලොක් චැට් තුළට ඇඩ් කල නොහැක!```',
                 MessageType.text
             );
         }
@@ -459,7 +459,7 @@ Mizuki.addCommand({pattern: 'setvar ?(.*)', fromMe: true, desc: Lang.SETVAR_DESC
         if (Config.LANG == 'TR' || Config.LANG == 'AZ') {
             await message.client.sendMessage(
                 message.jid,
-                '_ඔබ Mizuki ගෙ භාෂාව *සිංහල* ලෙස වෙනස් කිරීමට උත්සාහ කරන බව පෙනේ._ _ඔබ කරන්න උත්සාහ කරනවා._\n_කලබල නොවන්න, මට ඔබට ගැලපෙන එක සකස් කළ හැකිය._',
+                '_ඔබ භාෂාව *සිංහල* ලෙස වෙනස් කිරීමට උත්සාහ කරන බව පෙනේ._ _ඔබ කරන්න උත්සාහ කරනවා._\n_කලබල නොවන්න, මට ඔබට ගැලපෙන එක සකස් කළ හැකිය._',
                 MessageType.text
             );
             return await heroku.patch(baseURI + '/config-vars', {
@@ -486,7 +486,7 @@ Mizuki.addCommand({pattern: 'setvar ?(.*)', fromMe: true, desc: Lang.SETVAR_DESC
         if (Config.LANG == 'SI' || Config.LANG == 'EN') {
             await message.client.sendMessage(
                 message.jid,
-                '_ඔබ Mizuki ගෙ භාෂාව *ඉංග්‍රීසි* ලෙස වෙනස් කිරීමට උත්සාහ කරන බව පෙනේ._ _ඔබ කරන්න උත්සාහ කරනවා._\n_කලබල නොවන්න, මට ඔබට ගැලපෙන එක සකස් කළ හැකිය._',
+                '_ඔබ භාෂාව *ඉංග්‍රීසි* ලෙස වෙනස් කිරීමට උත්සාහ කරන බව පෙනේ._ _ඔබ කරන්න උත්සාහ කරනවා._\n_කලබල නොවන්න, මට ඔබට ගැලපෙන එක සකස් කළ හැකිය._',
                 MessageType.text
             );
             return await heroku.patch(baseURI + '/config-vars', {
@@ -513,7 +513,7 @@ Mizuki.addCommand({pattern: 'setvar ?(.*)', fromMe: true, desc: Lang.SETVAR_DESC
         if (Config.LANG == 'SI' || Config.LANG == 'EN') {
             await message.client.sendMessage(
                 message.jid,
-                '_ඔබ Mizuki ගෙ භාෂාව *අසර්බයිජානියානු* ලෙස වෙනස් කිරීමට උත්සාහ කරන බව පෙනේ. _එහෙත් එය කල නොහැකිය මන්දයත් මම සිංහල හා English පමණක් භාවිත කරන බැවිනි._',
+                '_ඔබ භාෂාව *අසර්බයිජානියානු* ලෙස වෙනස් කිරීමට උත්සාහ කරන බව පෙනේ. _එහෙත් එය කල නොහැකිය මන්දයත් මම සිංහල හා English පමණක් භාවිත කරන බැවිනි._',
                 MessageType.text
             );
             return await heroku.patch(baseURI + '/config-vars', {
@@ -535,39 +535,12 @@ Mizuki.addCommand({pattern: 'setvar ?(.*)', fromMe: true, desc: Lang.SETVAR_DESC
             });
         }
     }
-    if (match[1] == 'LANGUAGE: ml' || match[1] == 'LANGUAGE: Ml' || match[1] == 'LANGUAGE:Ml' || match[1] == 'LANGUAGE:ML' || match[1] == 'LANGUAGE: ML' || match[1] == 'LANGUAGE:mL' || match[1] == 'LANGUAGE: mL' || match[1] == 'LANGUAGE:M L') {
-
-        if (Config.LANG == 'SI' || Config.LANG == 'EN') {
-            await message.client.sendMessage(
-                message.jid,
-                '_ඔබ Mizuki ගෙ භාෂාව *මලයාලම්* ලෙස වෙනස් කිරීමට උත්සාහ කරන බව පෙනේ._\n_එහෙත් එය කල නොහැකිය මන්දයත් මම සිංහල හා English පමණක් භාවිත කරන බැවිනි._',
-                MessageType.text
-            );
-            return await heroku.patch(baseURI + '/config-vars', {
-                body: {
-                    ['LANGUAGE']: 'EN'
-                }
-            });
-        }
-        else {
-            await message.client.sendMessage(
-                message.jid,
-                '_It looks like you are trying to change bot language to *Malayalam.*\n_But it can\'t be done because I only use Sinhala and English._',
-                MessageType.text
-            );
-            return await heroku.patch(baseURI + '/config-vars', {
-                body: {
-                    ['LANGUAGE']: 'EN'
-                }
-            });
-        }
-    }
     if (match[1] == 'LANGUAGE: HI' || match[1] == 'LANGUAGE: Hı' || match[1] == 'LANGUAGE:Hı' || match[1] == 'LANGUAGE:hı' || match[1] == 'LANGUAGE: hı' || match[1] == 'LANGUAGE:H I') {
 
         if (Config.LANG == 'SI' || Config.LANG == 'EN') {
             await message.client.sendMessage(
                 message.jid,
-                '_ඔබ Mizuki ගෙ භාෂාව *හින්දි* ලෙස වෙනස් කිරීමට උත්සාහ කරන බව පෙනේ._\n_එහෙත් එය කල නොහැකිය මන්දයත් මම සිංහල හා English පමණක් භාවිත කරන බැවිනි._',
+                '_ඔබ භාෂාව *හින්දි* ලෙස වෙනස් කිරීමට උත්සාහ කරන බව පෙනේ._\n_එහෙත් එය කල නොහැකිය මන්දයත් මම සිංහල හා English පමණක් භාවිත කරන බැවිනි._',
                 MessageType.text
             );
             return await heroku.patch(baseURI + '/config-vars', {
@@ -594,7 +567,7 @@ Mizuki.addCommand({pattern: 'setvar ?(.*)', fromMe: true, desc: Lang.SETVAR_DESC
         if (Config.LANG == 'SI' || Config.LANG == 'EN') {
             await message.client.sendMessage(
                 message.jid,
-                '_ඔබ Mizuki ගෙ භාෂාව *ස්පාඤ්ඤ* ලෙස වෙනස් කිරීමට උත්සාහ කරන බව පෙනේ._\n_එහෙත් එය කල නොහැකිය මන්දයත් මම සිංහල හා English පමණක් භාවිත කරන බැවිනි._',
+                '_ඔබ භාෂාව *ස්පාඤ්ඤ* ලෙස වෙනස් කිරීමට උත්සාහ කරන බව පෙනේ._\n_එහෙත් එය කල නොහැකිය මන්දයත් මම සිංහල හා English පමණක් භාවිත කරන බැවිනි._',
                 MessageType.text
             );
             return await heroku.patch(baseURI + '/config-vars', {
@@ -621,7 +594,7 @@ Mizuki.addCommand({pattern: 'setvar ?(.*)', fromMe: true, desc: Lang.SETVAR_DESC
         if (Config.LANG == 'SI' || Config.LANG == 'EN') {
             await message.client.sendMessage(
                 message.jid,
-                '_ඔබ Mizuki ගෙ භාෂාව *ඉන්දුනීසියානු* ලෙස වෙනස් කිරීමට උත්සාහ කරන බව පෙනේ._\n_එහෙත් එය කල නොහැකිය මන්දයත් මම සිංහල හා English පමණක් භාවිත කරන බැවිනි._',
+                '_ඔබ භාෂාව *ඉන්දුනීසියානු* ලෙස වෙනස් කිරීමට උත්සාහ කරන බව පෙනේ._\n_එහෙත් එය කල නොහැකිය මන්දයත් මම සිංහල හා English පමණක් භාවිත කරන බැවිනි._',
                 MessageType.text
             );
             return await heroku.patch(baseURI + '/config-vars', {
