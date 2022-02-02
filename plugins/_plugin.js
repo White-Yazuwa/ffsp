@@ -32,7 +32,7 @@ var LANG = {
     limit: Config.LANG == 'SI' || Config.LANG == 'EN' ? '*මෙම ප්ලගිනය ආරක්‍ෂක සීමාව ඉක්මවා යයි!*\n*Zararlılık Yüzdesi:* _%' : '*This Plugin Exceeds Security Limit!*\n*Percentage of Harm:* _%',
     imside: Config.LANG == 'SI' || Config.LANG == 'EN' ? '*ඔබට දැනට පවතින ප්ලගීන නැවත එක්කල කළ නොහැක!*' : '*You Cant Reinstall Existing Plugins!*'
 };
-Mizuki.addCommand({pattern: 'install ?(.*)', fromMe: true, desc: Lang.INSTALL_DESC, warn: Lang.WARN}, (async (message, match) => {
+Aqua.addCommand({pattern: 'install ?(.*)', fromMe: true, desc: Lang.INSTALL_DESC, warn: Lang.WARN}, (async (message, match) => {
 
     if (match[1] == '') return await message.client.sendMessage(message.jid, Lang.NEED_URL + '.install https://gist.github.com/MrJoka-Thejaka/94eab9bab000ba322436bc7f9dad80dd', MessageType.text)
     try {
@@ -119,7 +119,7 @@ Mizuki.addCommand({pattern: 'install ?(.*)', fromMe: true, desc: Lang.INSTALL_DE
     }
 }));
 
-Mizuki.addCommand({pattern: 'plugin$', fromMe: true, desc: Lang.PLUGIN_DESC}, (async (message, match) => {
+Aqua.addCommand({pattern: 'plugin$', fromMe: true, desc: Lang.PLUGIN_DESC}, (async (message, match) => {
     var mesaj = Lang.INSTALLED_FROM_REMOTE;
     var plugins = await Db.PluginDB.findAll();
     if (plugins.length < 1) {
@@ -135,7 +135,7 @@ Mizuki.addCommand({pattern: 'plugin$', fromMe: true, desc: Lang.PLUGIN_DESC}, (a
     }
 }));
 
-Mizuki.addCommand({pattern: 'remove(?: |$)(.*)', fromMe: true, desc: Lang.REMOVE_DESC}, (async (message, match) => {
+Aqua.addCommand({pattern: 'remove(?: |$)(.*)', fromMe: true, desc: Lang.REMOVE_DESC}, (async (message, match) => {
     if (match[1] === '') return await message.sendMessage(Lang.NEED_PLUGIN);
     if (!match[1].startsWith('__')) match[1] = '__' + match[1];
     try {
