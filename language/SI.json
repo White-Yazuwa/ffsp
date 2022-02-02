@@ -232,7 +232,7 @@
             "INVALID_HEROKU": "*❌ ඔබේ හෙරොකු තොරතුරු වැරදිය!*",
             "UPDATED": "*✅ සාර්ථකව යාවත්කාලීන කරන ලදි!*",
             "UPDATED_LOCAL": "*✅ සාර්ථකව යාවත්කාලීන කරන ලදි!*",
-            "AFTER_UPDATE": "*COBRA නැවත ආරම්භ කරමින්!🔄*",
+            "AFTER_UPDATE": "*Aqua නැවත ආරම්භ කරමින්!🔄*",
             "IN_AF": "*Please check* ```HEROKU_APP_NAME``` *and* ```app name``` *They must be same.*\n*If these two values ​​are the same, please restore* ```HEROKU_API_KEY```\n\n_To access these settings, use Heroku >> App >> Settings >> Reavel Config Vars_\n_To renew your API key, follow these steps, Heroku >> Account >> API Key then replace old api key in config vars._"
         },
         "whois": {
