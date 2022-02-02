@@ -17,14 +17,14 @@ DATABASE_URL = process.env.DATABASE_URL === undefined ? './cobramain.db' : proce
 DEBUG = process.env.DEBUG === undefined ? false : convertToBool(process.env.DEBUG);
 
 module.exports = {
-    VERSION: 'v1.2 pro',
+    VERSION: '🌀AQUA 1.0 beta',
     CHANNEL: 'https://t.me/',
     SESSION: process.env.AQUA_SESSION === undefined ? '' : process.env.AQUA_SESSION,
     ANTİLİNK: process.env.ANTİ_LİNK === undefined ? 'false' : process.env.ANTİ_LİNK,
     ANTIGROUP: process.env.ANTIGRP_LINK === undefined ? 'false' : process.env.ANTIGRP_LINK,
     VOICEEVA: process.env.VOICE_EVA === undefined ? 'false' : process.env.VOICE_EVA,
     AUTOBİO: process.env.AUTO_BİO === undefined ? 'false' : process.env.AUTO_BİO,
-    CAP_BIO: process.env.CAP_BIO === undefined ? '°•♛꧁COBRABOT꧂♛•°' : process.env.CAP_BIO,
+    CAP_BIO: process.env.CAP_BIO === undefined ? '© 𝙸 𝙰𝙼 𝙰𝚀𝚄𝙰𝙱𝙾𝚃' : process.env.CAP_BIO,
     GANSTYLE: process.env.GAN_IMAGE === undefined ? 'https://i.hizliresim.com/loUtAb.jpg' : process.env.GAN_IMAGE,
     LANG: process.env.LANGUAGE === undefined ? 'EN' : process.env.LANGUAGE.toUpperCase(),
     ALIVEMSG: process.env.ALIVE_MESSAGE === undefined ? 'default' : process.env.ALIVE_MESSAGE,
