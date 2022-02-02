@@ -127,7 +127,7 @@ Aqua.addCommand({pattern: 'plugin$', fromMe: true, desc: Lang.PLUGIN_DESC}, (asy
     } else {
         plugins.map(
             (plugin) => {
-                let vf = plugin.dataValues.url.includes(listGist) ? msg : unmsg
+                let vf = plugin.dataValues.url.includes(creator) ? msg : unmsg
                 mesaj += '```' + plugin.dataValues.name + '```: ' + plugin.dataValues.url + '\n' + vf + '\n\n';
             }
         );
