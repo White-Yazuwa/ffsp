@@ -1,17 +1,17 @@
-/* Copyright (C) 2020 Yusuf Usta. / Copyright (C) 2021 Mr.joka.
+/* Copyright (C) 2020 Yusuf Usta. 
 Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
-Mizuki - Mr.joka
+
 */
 
-const Mizuki = require('../events');
+const Aqua = require('../events');
 const Heroku = require('heroku-client');
 const Config = require('../config');
 const {MessageType} = require('@adiwajshing/baileys');
 const got = require('got');
 const fs = require('fs');
 const Db = require('./sql/plugin');
-const listGist ='sanuwaofficial'; 
+const creator ='sanuwaofficial'; 
 
 const Language = require('../language');
 const Lang = Language.getString('_plugin');
