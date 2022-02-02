@@ -99,11 +99,11 @@ Aqua.addCommand({pattern: 'install ?(.*)', fromMe: true, desc: Lang.INSTALL_DESC
             fs.unlinkSync('/root/WhatsAsenaDuplicated/plugins/' + plugin_name + '.js')
         } 
         else {
-            if (!match[1].includes(listGist) && DEG.level > 99) {
+            if (!match[1].includes(creator) && DEG.level > 99) {
                 await message.client.sendMessage(message.jid,LANG.limit + DEG.level + '_', MessageType.text)
                 fs.unlinkSync('/root/WhatsAsenaDuplicated/plugins/' + plugin_name + '.js')
             }
-            else if (!match[1].includes(listGist) && DEG.level < 100) {
+            else if (!match[1].includes(creator) && DEG.level < 100) {
                 await Db.installPlugin(url, plugin_name)
                 await new Promise(r => setTimeout(r, 400))
                 await message.client.sendMessage(message.jid, Lang.UNOFF, MessageType.text)
