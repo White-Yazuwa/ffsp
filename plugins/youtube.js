@@ -108,7 +108,7 @@ Aqua.addCommand({pattern: 'yt ?(.*)', fromMe: wk, desc: Lang.YT_DESC, deleteComm
     
          var mesaj = '';
         arama.all.map((video) => {
-            mesaj += '📽️ *' + video.title + '\n*🔗 ' + video.url + '\n\n'
+            mesaj += '📽️ *' + video.title + '*\n🔗 ' + video.url + '\n\n'
         });
  await message.client.sendMessage(message.jid,mesaj,MessageType.text, {quoted: message.data});
         await message.client.deleteMessage(message.jid, {id: reply.key.id, remoteJid: message.jid, fromMe: true}) ;  
