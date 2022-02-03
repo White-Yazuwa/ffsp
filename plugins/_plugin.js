@@ -119,7 +119,7 @@ Aqua.addCommand({pattern: 'install ?(.*)', fromMe: true, desc: Lang.INSTALL_DESC
     }
 }));
 
-Aqua.addCommand({pattern: 'plugin$', fromMe: true, desc: Lang.PLUGIN_DESC}, (async (message, match) => {
+Aqua.addCommand({pattern: 'plugin$', fromMe: true, desc: Lang.PLUGIN_DESC , deleteCommand: false}, (async (message, match) => {
     var mesaj = Lang.INSTALLED_FROM_REMOTE;
     var plugins = await Db.PluginDB.findAll();
     if (plugins.length < 1) {
@@ -135,7 +135,7 @@ Aqua.addCommand({pattern: 'plugin$', fromMe: true, desc: Lang.PLUGIN_DESC}, (asy
     }
 }));
 
-Aqua.addCommand({pattern: 'remove(?: |$)(.*)', fromMe: true, desc: Lang.REMOVE_DESC}, (async (message, match) => {
+Aqua.addCommand({pattern: 'remove(?: |$)(.*)', fromMe: true, desc: Lang.REMOVE_DESC, deleteCommand: false }, (async (message, match) => {
     if (match[1] === '') return await message.sendMessage(Lang.NEED_PLUGIN);
     if (!match[1].startsWith('__')) match[1] = '__' + match[1];
     try {
