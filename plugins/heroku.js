@@ -1,4 +1,4 @@
-const Mizuki = require('../events');
+const Aqua = require('../events');
 const Config = require('../config');
 const Heroku = require('heroku-client');
 const {secondsToHms} = require('./afk');
@@ -17,7 +17,7 @@ const heroku = new Heroku({
 
 let baseURI = '/apps/' + Config.HEROKU.APP_NAME;
 
-Mizuki.addCommand({pattern: 'degis ?(.*)', fromMe: true, desc: Lang.DEGİS_DESC}, (async (message, match) => {
+Aqua.addCommand({pattern: 'degis ?(.*)', fromMe: true, desc: Lang.DEGİS_DESC, deleteCommand: false }, (async (message, match) => {
 
     if (match[1] == '') {
         return await message.client.sendMessage(message.jid, Lang.DEGİS_NONE, MessageType.text); 
@@ -151,7 +151,7 @@ Mizuki.addCommand({pattern: 'degis ?(.*)', fromMe: true, desc: Lang.DEGİS_DESC}
 }));
 
 
-Mizuki.addCommand({pattern: 'restart$', fromMe: true, desc: Lang.RESTART_DESC}, (async (message, match) => {
+Aqua.addCommand({pattern: 'restart$', fromMe: true, desc: Lang.RESTART_DESC , deleteCommand: false}, (async (message, match) => {
 
     await message.client.sendMessage(message.jid,Lang.RESTART_MSG, MessageType.text);
     console.log(baseURI);
@@ -160,7 +160,7 @@ Mizuki.addCommand({pattern: 'restart$', fromMe: true, desc: Lang.RESTART_DESC}, 
     });
 }));
 
-Mizuki.addCommand({pattern: 'shutdown$', fromMe: true, desc: Lang.SHUTDOWN_DESC}, (async(message, match) => {
+Aqua.addCommand({pattern: 'shutdown$', fromMe: true, desc: Lang.SHUTDOWN_DESC, deleteCommand: false }, (async(message, match) => {
 
     await heroku.get(baseURI + '/formation').then(async (formation) => {
         forID = formation[0].id;
@@ -178,7 +178,7 @@ Mizuki.addCommand({pattern: 'shutdown$', fromMe: true, desc: Lang.SHUTDOWN_DESC}
 
 if (Config.WORKTYPE == 'private') {
 
-    Mizuki.addCommand({pattern: 'dyno$', fromMe: true, desc: Lang.DYNO_DESC}, (async (message, match) => {
+    Aqua.addCommand({pattern: 'dyno$', fromMe: true, desc: Lang.DYNO_DESC, deleteCommand: false}, (async (message, match) => {
 
         heroku.get('/account').then(async (account) => {
             // have encountered some issues while calling this API via heroku-client
@@ -211,7 +211,7 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
 
-    Mizuki.addCommand({pattern: 'dyno$', fromMe: false, desc: Lang.DYNO_DESC}, (async (message, match) => {
+    Aqua.addCommand({pattern: 'dyno$', fromMe: false, desc: Lang.DYNO_DESC, deleteCommand: false }, (async (message, match) => {
 
         heroku.get('/account').then(async (account) => {
             // have encountered some issues while calling this API via heroku-client
@@ -243,7 +243,7 @@ else if (Config.WORKTYPE == 'public') {
     }));
 }
 
-Mizuki.addCommand({pattern: 'setvar ?(.*)', fromMe: true, desc: Lang.SETVAR_DESC}, (async(message, match) => {
+Aqua.addCommand({pattern: 'setvar ?(.*)', fromMe: true, desc: Lang.SETVAR_DESC , deleteCommand: false }, (async(message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.KEY_VAL_MISSING, MessageType.text);
 
@@ -631,8 +631,7 @@ Mizuki.addCommand({pattern: 'setvar ?(.*)', fromMe: true, desc: Lang.SETVAR_DESC
     }
 }));
 
-
-Mizuki.addCommand({pattern: 'delvar ?(.*)', fromMe: true, desc: Lang.DELVAR_DESC}, (async (message, match) => {
+Aqua.addCommand({pattern: 'delvar ?(.*)', fromMe: true, desc: Lang.DELVAR_DESC, deleteCommand: false }, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.KEY_VAL_MISSING, MessageType.text);
     await heroku.get(baseURI + '/config-vars').then(async (vars) => {
@@ -654,7 +653,7 @@ Mizuki.addCommand({pattern: 'delvar ?(.*)', fromMe: true, desc: Lang.DELVAR_DESC
 
 }));
 
-Mizuki.addCommand({pattern: 'getvar ?(.*)', fromMe: true, desc: Lang.GETVAR_DESC}, (async (message, match) => {
+Aqua.addCommand({pattern: 'getvar ?(.*)', fromMe: true, desc: Lang.GETVAR_DESC, deleteCommand: false}, (async (message, match) => {
 
     if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.KEY_VAL_MISSING, MessageType.text);
     await heroku.get(baseURI + '/config-vars').then(async (vars) => {
