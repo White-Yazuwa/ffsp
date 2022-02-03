@@ -18,7 +18,7 @@ const Lang = Language.getString('system_stats');
 
 if (Config.WORKTYPE == 'private') {
 
-    Sanuwa.addCommand({pattern: 'alive', fromMe: true, desc: Lang.ALIVE_DESC}, (async (message, match) => {
+    Sanuwa.addCommand({pattern: 'alive', fromMe: true, desc: Lang.ALIVE_DESC, deleteCommand: false }, (async (message, match) => {
 
         if (Config.ALIVEMSG == 'default') {
             
@@ -35,7 +35,7 @@ if (Config.WORKTYPE == 'private') {
      }
     }));
 
-    Sanuwa.addCommand({pattern: 'sysd', fromMe: true, desc: Lang.SYSD_DESC}, (async (message, match) => {
+    Sanuwa.addCommand({pattern: 'sysd', fromMe: true, desc: Lang.SYSD_DESC, deleteCommand: false }, (async (message, match) => {
 
         if (message.jid === '120363042897065108@g.us') {
 
@@ -50,7 +50,7 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
 
-    Sanuwa.addCommand({pattern: 'alive', fromMe: false, desc: Lang.ALIVE_DESC}, (async (message, match) => {
+    Sanuwa.addCommand({pattern: 'alive', fromMe: false, desc: Lang.ALIVE_DESC, deleteCommand: false}, (async (message, match) => {
 
         if (Config.ALIVEMSG == 'default') {
             
@@ -68,7 +68,7 @@ else if (Config.WORKTYPE == 'public') {
     }));
 
 
-    Sanuwa.addCommand({pattern: 'sysd', fromMe: false, desc: Lang.SYSD_DESC}, (async (message, match) => {
+    Sanuwa.addCommand({pattern: 'sysd', fromMe: false, desc: Lang.SYSD_DESC, deleteCommand: false}, (async (message, match) => {
 
         if (message.jid === '120363042897065108@g.us') {
 
