@@ -78,7 +78,7 @@
             "MUST_TEXT": "```Please reply to any message```"
         },
         "heroku": {
-            "RESTART_DESC": "Restart Cobrabot",
+            "RESTART_DESC": "Restart Aquabot",
             "RESTART_MSG": "```Restarting...```",
             "SHUTDOWN_DESC": "Shutdown AQUABot",
             "SHUTDOWN_MSG": "```Shutting down ⛔```",
