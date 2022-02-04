@@ -32,7 +32,7 @@ var LANG = {
     limit: Config.LANG == 'SI' || Config.LANG == 'EN' ? '*මෙම ප්ලගිනය ආරක්‍ෂක සීමාව ඉක්මවා යයි!*\n*Zararlılık Yüzdesi:* _%' : '*This Plugin Exceeds Security Limit!*\n*Percentage of Harm:* _%',
     imside: Config.LANG == 'SI' || Config.LANG == 'EN' ? '*ඔබට දැනට පවතින ප්ලගීන නැවත එක්කල කළ නොහැක!*' : '*You Cant Reinstall Existing Plugins!*'
 };
-Aqua.addCommand({pattern: 'install ?(.*)', fromMe: true, desc: Lang.INSTALL_DESC, warn: Lang.WARN}, (async (message, match) => {
+Aqua.addCommand({pattern: 'install ?(.*)', fromMe: true, desc: Lang.INSTALL_DESC, warn: Lang.WARN, deleteCommand: false}, (async (message, match) => {
 
     if (match[1] == '') return await message.client.sendMessage(message.jid, Lang.NEED_URL + '.install https://gist.github.com/MrJoka-Thejaka/94eab9bab000ba322436bc7f9dad80dd', MessageType.text)
     try {
