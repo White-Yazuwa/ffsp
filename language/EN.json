@@ -501,7 +501,7 @@
                    "U_POST":"```📤Uploading your Instagram post...```",
                    "N_URL":"*⛔Please give a valid Insta link⛔*",
                    "E_URL":"⛔There is an error in the link⛔",
-                   "INSTA_DESC":"Download videos posts from Instagram.,"
+                   "INSTA_DESC":"Download videos posts from Instagram.",
                    "D_USER":"```📡Fetching user data...```",
                    "E_URL":"*⛔Can not find user⛔*"
   }
