@@ -506,7 +506,14 @@
                    "E_USER":"*⛔Can not find user⛔*",
                    "N_USER":"*⛔Please enter valid Instagram username.⛔*",
                    "I_DESC":"Fetching Instagram user data"
-  }
+  },
+     "facebook": {
+                 "FB_DESC": "Download videos from Facebook",
+                 "FB_DOWN": "```📥Downloading your facebook video...```",
+                 "FB_UP": "```📤Uploading your facebook video...```",
+                 "N_FB": "*⛔Please give a valid fb link⛔*",
+                 "E_FB": "*⛔There is an error in the link⛔*"
+     }
     }
 }
 
