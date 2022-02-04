@@ -503,7 +503,9 @@
                    "E_URL":"⛔There is an error in the link⛔",
                    "INSTA_DESC":"Download videos posts from Instagram.",
                    "D_USER":"```📡Fetching user data...```",
-                   "E_URL":"*⛔Can not find user⛔*"
+                   "E_URL":"*⛔Can not find user⛔*",
+                   "N_USER":"⛔Please enter valid Instagram username.⛔",
+                   "I_DESC":"Fetching Instagram user data"
   }
     }
 }
