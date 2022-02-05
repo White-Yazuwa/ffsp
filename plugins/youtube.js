@@ -74,7 +74,7 @@ let wk = config.WORKTYPE == 'public' ? false : true
         var VID = '';
         try {
             if (s2vid.includes('watch')) {
-                var tsts = match[1].replace('watch?v=', '')
+                var tsts = s2vid.replace('watch?v=', '')
                 var alal = tsts.split('/')[3]
                 VID = alal
             } else {     
