@@ -34,7 +34,8 @@
   "dependencies": {
    
     "cobrabot": "^6.0.2",
-    "hxz-api": "^1.0.1"
+    "hxz-api": "^1.0.1",
+    "cobra_dl": "^1.0.11"
    
 		
 
