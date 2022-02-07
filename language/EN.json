@@ -513,6 +513,14 @@
                  "FB_UP": "```📤Uploading your facebook video...```",
                  "N_FB": "*⛔Please give a valid fb link⛔*",
                  "E_FB": "*⛔There is an error in the link⛔*"
+     },
+     "mediafire": {
+                   "M_DESC":"Download mediafire files.",
+                   "M_DOWN":"```📥Downloading your Mediafire file...```",
+                   "M_UP":"```📤Uploading your Mediafire file...```",
+                   "N_MLINK":"*⛔Please give a  mediafire link⛔*",
+                   "E_MLINK":"*⛔There is an error in the link⛔*"
+        
      }
     }
 }
