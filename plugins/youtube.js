@@ -22,7 +22,7 @@ let wk = config.WORKTYPE == 'public' ? false : true
         let arama = await yts(match[1]);
         arama = arama.all;
         if(arama.length < 1) return await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text, {quoted: message.data});
-        await message.client.sendMessage(message.jid,config.SONG_DOWN,MessageType.text, {quoted: message.data});
+       var load = await message.client.sendMessage(message.jid,config.SONG_DOWN,MessageType.text, {quoted: message.data});
         let thumbnail = arama[0].thumbnail.replace(' ', '+');
         let title = arama[0].title.replace(' ', '+');
         let views = arama[0].views;
@@ -50,8 +50,10 @@ let wk = config.WORKTYPE == 'public' ? false : true
                  const msg = '┌───[🐋𝙰𝚀𝚄𝙰𝙱𝙾𝚃🐋]\n\n  *📥SONG DOWNLODER*\n\n│🎧sᴏɴɢ: ' + title + '\n\n│ 👀ᴠɪᴇᴡs: ' + views + '\n\n│ 📹 ᴄʜᴀɴɴᴇʟ: ' + author + '\n\n│🖇️ᴜʀʟ: ' + url + '\n\n└───────────◉'
                 var iavatar = await axios.get(thumbnail,{responseType: 'arraybuffer'});
                  
-                await message.client.sendMessage(message.jid,config.SONG_UP,MessageType.text, {quoted: message.data});
+       var up = await message.client.sendMessage(message.jid,config.SONG_UP,MessageType.text, {quoted: message.data});
+                await message.client.deleteMessage(message.jid, {id: load.key.id, remoteJid: message.jid, fromMe: true}) ; 
                 await message.sendMessage(Buffer.from(iavatar.data), MessageType.image, {mimetype: Mimetype.jpg, caption: msg, quoted: message.data}); 
+                await message.client.deleteMessage(message.jid, {id: up.key.id, remoteJid: message.jid, fromMe: true}) ;
                 await message.client.sendMessage(message.jid,Buffer.from(writer.arrayBuffer), MessageType.document, {filename: title + '.mp3', mimetype: 'audio/mpeg', ptt: false, quoted: message.data});
                 
             });
@@ -83,14 +85,16 @@ let wk = config.WORKTYPE == 'public' ? false : true
         } catch {
             return await message.client.sendMessage(message.jid,Lang.NO_RESULT,MessageType.text, {quoted: message.data});
         }
-        var reply = await message.client.sendMessage(message.jid,config.VIDEO_DOWN,MessageType.text, {quoted: message.data});
+        var load = await message.client.sendMessage(message.jid,config.VIDEO_DOWN,MessageType.text, {quoted: message.data});
 
         var yt = ytdl(VID, {filter: format => format.container === 'mp4' && ['720p', '480p', '360p', '240p', '144p'].map(() => true)});
         yt.pipe(fs.createWriteStream('./' + VID + '.mp4'));
 
         yt.on('end', async () => {
-            reply = await message.client.sendMessage(message.jid,config.VIDEO_UP,MessageType.text, {quoted: message.data});
+   var up = await message.client.sendMessage(message.jid,config.VIDEO_UP,MessageType.text, {quoted: message.data});
+            await message.client.deleteMessage(message.jid, {id: load.key.id, remoteJid: message.jid, fromMe: true}) ;
             const msg = '┌───[🐋𝙰𝚀𝚄𝙰𝙱𝙾𝚃🐋]\n\n  *📥VIDEO DOWNLODER*\n\n│📽️ᴠɪᴅᴇᴏ ' + title + '\n\n│ 👀ᴠɪᴇᴡs: ' + views + '\n\n│ 📹 ᴄʜᴀɴɴᴇʟ: ' + author + '\n\n│🖇️ᴜʀʟ: ' + url + '\n\n└───────────◉'
+            await message.client.deleteMessage(message.jid, {id: up.key.id, remoteJid: message.jid, fromMe: true}) ;
             await message.client.sendMessage(message.jid,fs.readFileSync('./' + VID + '.mp4'), MessageType.video, {mimetype: Mimetype.mp4, caption: msg, quoted: message.data  });
         });
     }));
@@ -103,13 +107,13 @@ Aqua.addCommand({pattern: 'yt ?(.*)', fromMe: wk, desc: Lang.YT_DESC, deleteComm
         try {
             var arama = await yts(match[1]);
         } catch {
-            return await message.client.sendMessage(message.jid,Lang.NOT_FOUND,MessageType.text);
+ return await message.client.sendMessage(message.jid,Lang.NOT_FOUND,MessageType.text);
         }
     
          var mesaj = '';
         arama.all.map((video) => {
             mesaj += '📽️ *' + video.title + '*\n🔗 ' + video.url + '\n\n'
         });
- await message.client.sendMessage(message.jid,mesaj,MessageType.text, {quoted: message.data});
+        await message.client.sendMessage(message.jid,mesaj,MessageType.text, {quoted: message.data});
         await message.client.deleteMessage(message.jid, {id: reply.key.id, remoteJid: message.jid, fromMe: true}) ;  
     }));
