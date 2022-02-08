@@ -2,7 +2,7 @@
   "name": "aquabot",
   "version": "1.0.1",
   "description": "aquabot happy for whatsapp.",
-  "main": "/Mizuki/bot.js",
+  "main": "/aquabot/bot.js",
   "scripts": {
     "start": "supervisor -s bot.js"
   },
