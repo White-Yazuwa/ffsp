@@ -1,6 +1,6 @@
 
 FROM fusuf/whatsasena:latest
-RUN git clone https://github.com/iamMagma/ptsp /root/QueenMizuki
+RUN git clone https://github.com/iamMagma/ptsp /root/aquabot
 WORKDIR /root/QueenMizuki/
 ENV TZ=Europe/Istanbul
 RUN yarn add supervisor -g
