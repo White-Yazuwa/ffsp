@@ -47,7 +47,10 @@
             "value": "*📤 ඔබේ වීඩියෝව Upload කරමින් පවතී...*"
             
         },
-       
+       "REMOVE_BG_API_KEY": {
+			"description": "Images වල background ඉවත් කිරීමට https://remove.bg වෙත ගොස් ලැබෙන API key එක ලබා දෙන්න.",
+			"required": false
+		},
         "HEROKU": {
             "description": " If it is running in Heroku, type true.",
             "required": true,
