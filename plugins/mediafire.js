@@ -17,7 +17,7 @@ Aqua.addCommand({ pattern: 'mediafire ?(.*)', fromMe: true, desc:Lang.M_DESC, de
   const linkdata = await axios.get(data.data.result[0].link, { responseType: 'arraybuffer'});
   var up = await message.client.sendMessage(message.jid,Lang.M_UP , MessageType.text, { quoted: message.data });                                                  
 await message.client.deleteMessage(message.jid, {id: load.key.id, remoteJid: message.jid, fromMe: true}) ;  
-await message.sendMessage(Buffer.from(linkdata.data), MessageType.document, { filename: data.data.result[0].nama, mimetype: data.data[0].mime,  quoted: message.data });
+await message.sendMessage(Buffer.from(linkdata.data), MessageType.document, { filename: data.data.result[0].nama, mimetype: data.data[0].result.mime,  quoted: message.data });
  return await message.client.deleteMessage(message.jid, {id: up.key.id, remoteJid: message.jid, fromMe: true})  
   
   }})
