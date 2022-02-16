@@ -11,7 +11,7 @@ if (Config.WORKTYPE == 'private') {
 
         var CMD_HELP = '';
         if (match[1] === '') {
-            Mizuki.commands.map(
+            Aqua.commands.map(
                 async (command) =>  {
                     if (command.dontAddCommandList || command.pattern === undefined) return;
                     try {
@@ -117,7 +117,7 @@ else if (Config.WORKTYPE == 'public') {
 
         var CMD_HELP = '';
         if (match[1] === '') {
-            Mizuki.commands.map(
+            aqua.commands.map(
                 async (command) =>  {
                     if (command.dontAddCommandList || command.pattern === undefined) return;
                     try {
