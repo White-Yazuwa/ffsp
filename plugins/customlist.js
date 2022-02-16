@@ -58,7 +58,7 @@ if (Config.WORKTYPE == 'private') {
                 message.jid,'●▬▬ *🐋Aquabot Public🐋* ▬▬●\n\n' + CMD_HELP, MessageType.text, { quoted: message.data });
         } else {
             var CMD_HELP = '';
-            Mizuki.commands.map(
+            Aqua.commands.map(
                 async (command) =>  {
                     if (command.dontAddCommandList || command.pattern === undefined) return;
                     try {
@@ -164,7 +164,7 @@ else if (Config.WORKTYPE == 'public') {
                 message.jid,'●▬▬ *🐋Aquabot Public🐋* ▬▬●\n\n' + CMD_HELP, MessageType.text, { quoted: message.data });
         } else {
             var CMD_HELP = '';
-            Mizuki.commands.map(
+            Aqua.commands.map(
                 async (command) =>  {
                     if (command.dontAddCommandList || command.pattern === undefined) return;
                     try {
