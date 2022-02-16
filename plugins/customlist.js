@@ -7,7 +7,7 @@ const Lang = Language.getString('aqua');
 
 if (Config.WORKTYPE == 'private') {
 
-    Aqua.addCommand({pattern: Config.CUS_PANEL + '?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
+    Aqua.addCommand({pattern: Config.CUS_PANEL + '?(.*)', fromMe: true, dontAddCommandList: true, deleteCommand: false }, (async (message, match) => {
 
         var CMD_HELP = '';
         if (match[1] === '') {
@@ -113,7 +113,7 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
 
-    Aqua.addCommand({pattern: Config.CUS_PANEL + '?(.*)', fromMe: false, dontAddCommandList: true}, (async (message, match) => {
+    Aqua.addCommand({pattern: Config.CUS_PANEL + '?(.*)', fromMe: false, dontAddCommandList: true, deleteCommand: false}, (async (message, match) => {
 
         var CMD_HELP = '';
         if (match[1] === '') {
