@@ -161,7 +161,9 @@ else if (Config.WORKTYPE == 'public') {
                 }
             );
             await message.client.sendMessage(
-                message.jid,'●▬▬ *🐋Aquabot Public🐋* ▬▬●\n\n' + CMD_HELP, MessageType.text, { quoted: message.data });
+                message.jid,'*╔═══❖•ೋ° °ೋ•❖═══╗*\n*║🐋Aquabot Command list 🐋║*\n*╚═══❖•ೋ° °ೋ•❖═══╝*\n\n*👷‍♂️Deployed by :*' + Config.DEPLOYER + '\n 
+
+ ' + CMD_HELP, MessageType.text, { quoted: message.data });
         } else {
             var CMD_HELP = '';
             Aqua.commands.map(
