@@ -31,6 +31,7 @@ module.exports = {
     ALIVE_LOGO: process.env.ALIVE_LOGO === undefined ? 'https://i.hizliresim.com/9tg3x8j.jpg' : process.env.ALIVE_LOGO,
     ALIVE_CMD: process.env.ALIVE_CMD === undefined ? 'alive' : process.env.ALIVE_CMD,
     CUS_PANEL: process.env.CUS_PANEL === undefined ? 'menu' : process.env.CUS_PANEL,
+    DEPLOYER: process.env.DEPLOYER === undefined ? 'SANUWA' : process.env.DEPLOYER,
     C_EMOJI: process.env.C_EMOJI === undefined ? '🐙' : process.env.C_EMOJI,
     D_EMOJI: process.env.D_EMOJI === undefined ? '🌀' : process.env.D_EMOJI,
     BOT_NAME: process.env.BOT_NAME === undefined ? 'bot' : process.env.BOT_NAME,
