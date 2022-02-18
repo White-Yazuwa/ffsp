@@ -14,7 +14,7 @@ Aqua.addCommand({ pattern: 'ig ?(.*)', fromMe: wk, desc:Lang.INSTA_DESC, deleteC
 
 if (!iglink) return await message.client.sendMessage(message.jid,Lang.N_URL, MessageType.text, { quoted: message.data });
 if (!match[1].includes('instagram.com')) return await message.client.sendMessage(message.jid,Lang.N_URL,MessageType.text, {quoted: message.data});
-await axios.get(`https://sanuwa-api.herokuapp.com/docs/download/igpost?url=${match[1]}&apikey=sanuwa`).then(async (response) => {
+await axios.get(`https://sanuw-api.herokuapp.com/docs/download/igpost?url=${match[1]}&apikey=sanuwa`).then(async (response) => {
     
 if (response.data.result.type == 'image') {	
 
