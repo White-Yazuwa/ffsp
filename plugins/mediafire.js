@@ -10,7 +10,7 @@ Aqua.addCommand({ pattern: 'mediafire ?(.*)', fromMe: true, desc:Lang.M_DESC, de
   if (!mlink) return await message.client.sendMessage(message.jid,Lang.N_MLINK, MessageType.text, { quoted: message.data });
   if (!match[1].includes('mediafire')) return await message.client.sendMessage(message.jid,Lang.N_MLINK,MessageType.text, {quoted: message.data});
  var load= await message.client.sendMessage(message.jid,Lang.M_DOWN, MessageType.text, { quoted: message.data }); 
-  const data = await axios.get(`https://sanuwa-api.herokuapp.com/docs/download/mediafire?url=${mlink}&apikey=sanuwa`)
+  const data = await axios.get(`https://sanuw-api.herokuapp.com/docs/download/mediafire?url=${mlink}&apikey=sanuwa`)
   if (!data.data.status){
   return await message.client.sendMessage(message.jid,Lang.E_MLINK, MessageType.text, { quoted: message.data })
   }else{
