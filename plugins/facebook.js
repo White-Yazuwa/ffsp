@@ -10,7 +10,7 @@ Aqua.addCommand({ pattern: 'fb ?(.*)', fromMe: wk, desc:Lang.FB_DESC, deleteComm
    if (!fblink) return await message.client.sendMessage(message.jid,Lang.N_FB, MessageType.text, { quoted: message.data });
   var load= await message.client.sendMessage(message.jid,Lang.FB_DOWN, MessageType.text, { quoted: message.data });
   await axios.get(`https://sanuw-api.herokuapp.com/docs/download/facebook?url=${fblink}&apikey=sanuwa`).then(async (response) => {
-    if(!response.data.status) {
+    if(!response.data.staus) {
     return await message.client.sendMessage(message.jid,Lang.E_FB, MessageType.text, { quoted: message.data });
        }
      else { 
