@@ -39,7 +39,7 @@ const linkdata = await axios.get(response.data.result.url, { responseType: 'arra
 
 await message.sendMessage(Buffer.from(linkdata.data), MessageType.video , { caption: msg , quoted: message.data})
 return await message.client.deleteMessage(message.jid, {id: up.key.id, remoteJid: message.jid, fromMe: true})}
-  else{ return await message.client.sendMessage(message.jid,Lang.E_URL, MessageType.text, { quoted: message.data });
+  else if(!response.data.status){ return await message.client.sendMessage(message.jid,Lang.E_URL, MessageType.text, { quoted: message.data });
 
   }
  })});
