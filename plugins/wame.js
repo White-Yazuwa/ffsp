@@ -8,7 +8,7 @@ const WAME_DESC = "Get a link to the user chat."
 const WAME = "🪀 ```Chat link from``` :- @{}: https://wa.me/{}"
 const NEED_UWONG = "*Give me a user!*"
     
-    Aqua.addCommand({pattern: 'wame ?(.*)', fromMe: workt, desc: WAME_DESC}, (async (message, match) => {    
+    Aqua.addCommand({pattern: 'wame ?(.*)', fromMe: workt, desc: WAME_DESC, deleteCommand: false}, (async (message, match) => {    
         if (message.reply_message !== false) {
             await message.client.sendMessage(message.jid, WAME.format(message.reply_message.jid.split('@')[0], message.reply_message.jid.replace('@s.whatsapp.net', ' ')), MessageType.text, {
                 quotedMessage: message.reply_message.data, contextInfo: {mentionedJid: [message.reply_message.jid.replace('c.us', 's.whatsapp.net')]}
