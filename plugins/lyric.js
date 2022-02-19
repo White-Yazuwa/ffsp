@@ -21,7 +21,3 @@ if (config.WORKTYPE == 'private') {
         await message.client.sendMessage(message.jid, Buffer.from(pic.data),  MessageType.image, {caption: msg , quoted: message.data  });
 
     }));    
-
-
-   
-  
