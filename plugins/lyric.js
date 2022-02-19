@@ -2,6 +2,7 @@ const Aqua = require('../events');
 const {MessageType,Mimetype} = require('@adiwajshing/baileys');
 const config = require('../config');
 const axios = require('axios');
+const Language = require('../language');
 const solenolyrics= require("solenolyrics"); 
 const Slang = Language.getString('lyrics');
 let wk = Config.WORKTYPE == 'public' ? false : true
