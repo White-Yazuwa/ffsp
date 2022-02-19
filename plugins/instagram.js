@@ -48,7 +48,7 @@ Aqua.addCommand({ pattern: 'insta ?(.*)', fromMe: wk, desc:Lang.I_DESC, deleteCo
   if (!iglink) return await message.client.sendMessage(message.jid,Lang.N_USER, MessageType.text, { quoted: message.data });
   const user = iglink.replace("https://www.instagram.com/","")
   var load= await message.client.sendMessage(message.jid,Lang.D_USER, MessageType.text, { quoted: message.data });
-  await axios.get(`https://sanuwa-api.herokuapp.com/docs/other/igstalk?username=${user}&apikey=sanuwa`).then(async (response) => {
+  await axios.get(`https://sanuw-api.herokuapp.com/docs/other/igstalk?username=${user}&apikey=sanuwa`).then(async (response) => {
     if(!response.data.status) {
     return await message.client.sendMessage(message.jid,Lang.E_USER, MessageType.text, { quoted: message.data });
        }
