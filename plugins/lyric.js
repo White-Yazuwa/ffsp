@@ -5,7 +5,7 @@ const axios = require('axios');
 const Language = require('../language');
 const solenolyrics= require("solenolyrics"); 
 const Slang = Language.getString('lyrics');
-let wk = Config.WORKTYPE == 'public' ? false : true
+let wk = config.WORKTYPE == 'public' ? false : true
 
 
  Aqua.addCommand({pattern: 'lyric ?(.*)', fromMe: wk, desc: Slang.LY_DESC, deleteCommand: false }, (async (message, match) => {
