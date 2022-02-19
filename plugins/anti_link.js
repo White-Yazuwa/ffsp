@@ -5,7 +5,27 @@ const Heroku = require('heroku-client');
 const heroku = new Heroku({
     token: config.HEROKU.API_KEY
 });
+
 let baseURI = '/apps/' + config.HEROKU.APP_NAME;
+var l_dsc = ''
+    var alr_on = ''
+    var alr_off = ''
+    var succ_on = ''
+    var succ_off = ''
+    if (config.LANG == 'SI') {
+        l_dsc = 'AntiLink මෙවලම සක්‍රිය කරයි.'
+        alr_on = 'AntiLink දැනටමත් ස්ක්‍රිය කර ඇත.'
+        alr_off = 'AntiLink දැනට අක්‍රිය කර ඇත!'
+        succ_on = 'AntiLink සාර්ථකව ස්ක්‍රිය විය!'
+        succ_off = 'AntiLink සාර්ථකව අක්‍රිය විය!'
+    }
+    if (config.LANG == 'EN') {
+        l_dsc = 'Activates the Antilink tool.'
+        alr_on = 'Antilink is already open!'
+        alr_off = 'Antilink is currently closed!'
+        succ_on = 'Antilink Opened Successfully!'
+        succ_off = 'Antilink Closed Successfully!'
+    }
  Aqua.addCommand({pattern: 'antilink ?(.*)', fromMe: true, desc: l_dsc, usage: '.antilink on / off' }, (async (message, match) => {
         const anti_status = `${config.ANTİLİNK}`
         if (match[1] == 'on') {
