@@ -20,4 +20,4 @@ if (config.WORKTYPE == 'private') {
         const msg = '┌───[🐋𝙰𝚀𝚄𝙰𝙱𝙾𝚃🐋]\n\n  *🎼LYRICS*\n\n│🔍sᴇᴀʀᴄʜᴇᴅ: ' + match[1] + '\n\n│✨ ғᴏᴜɴᴅᴇᴅ: ' + tit + '\n\n│👨‍🎤 ᴏᴡɴᴇʀ: ' + son +'\n\n│✒️ ʟʏʀɪᴄs : ' + aut + '\n\n└───────────◉'
         await message.client.sendMessage(message.jid, Buffer.from(pic.data),  MessageType.image, {caption: msg , quoted: message.data  });
 
-    }));    
+    }))    
