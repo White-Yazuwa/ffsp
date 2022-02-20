@@ -42,7 +42,7 @@ var l_dsc = ''
             }
         }
         else if (match[1] == 'off') {
-            if (anti_status !== 'true') {
+            if (!anti_status == 'true') {
                 return await message.client.sendMessage(message.jid, '*' + alr_off + '*', MessageType.text)
             }
             else {
