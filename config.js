@@ -25,6 +25,7 @@ module.exports = {
     VOICEEVA: process.env.VOICE_EVA === undefined ? 'false' : process.env.VOICE_EVA,
     AUTOBİO: process.env.AUTO_BİO === undefined ? 'false' : process.env.AUTO_BİO,
     CAP_BIO: process.env.CAP_BIO === undefined ? '© 𝙸 𝙰𝙼 𝙰𝚀𝚄𝙰𝙱𝙾𝚃' : process.env.CAP_BIO,
+    CAPTION: process.env.CAPTION === undefined ? '© 𝙸 𝙰𝙼 𝙰𝚀𝚄𝙰𝙱𝙾𝚃' : process.env.CAPTION,
     GANSTYLE: process.env.GAN_IMAGE === undefined ? 'https://i.hizliresim.com/loUtAb.jpg' : process.env.GAN_IMAGE,
     LANG: process.env.LANGUAGE === undefined ? 'EN' : process.env.LANGUAGE.toUpperCase(),
     ALIVEMSG: process.env.ALIVE_MESSAGE === undefined ? 'default' : process.env.ALIVE_MESSAGE,
