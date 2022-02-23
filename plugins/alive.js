@@ -14,12 +14,19 @@ const Lang = Language.getString('system_stats');
 if (Config.WORKTYPE == 'private') {
 
     Aqua.addCommand({pattern: 'alive', fromMe: true, desc: Lang.ALIVE_DESC, deleteCommand: false }, (async (message, match) => {
+        var HANDLER = '';
+    
+                    if (/\[(\W*)\]/.test(Config.HANDLERS)) {
+                        HANDLER = Config.HANDLERS.match(/\[(\W*)\]/)[1][0];
+                    } else {
+                        HANDLER = '.';
+                    }
 
         if (Config.ALIVEMSG == 'default') {
             
         var aliveimg = await axios.get (Config.ALIVE_LOGO, {responseType: 'arraybuffer'})
 
-        await message.client.sendMessage (message.jid, Buffer.from (aliveimg.data), MessageType.image, {mimetype: Mimetype.png, caption: '┌───[🐋𝙰𝚀𝚄𝙰𝙱𝙾𝚃 🐋]\n\n│```Hey, I\'m online now```\n\n│ ```Type``` ' + Config. CUS_PANEL + ' ```to get command list```\n\n│ _Version_: ```' + Config. VERSION + '```\n\n└─────────────◉'})
+        await message.client.sendMessage (message.jid, Buffer.from (aliveimg.data), MessageType.image, {mimetype: Mimetype.png, caption: '┌───[🐋𝙰𝚀𝚄𝙰𝙱𝙾𝚃 🐋]\n\n│```👋Hey, I\'m online now```\n\n│ ```Type``` ' + HANDLER + Config. CUS_PANEL + ' ```to get command list```\n\n│ _Version_: ```'  + Config. VERSION + '```\n\n└─────────────◉'})
 
     }
     else {
@@ -46,12 +53,19 @@ if (Config.WORKTYPE == 'private') {
 else if (Config.WORKTYPE == 'public') {
 
     Aqua.addCommand({pattern: 'alive', fromMe: false, desc: Lang.ALIVE_DESC, deleteCommand: false}, (async (message, match) => {
+        var HANDLER = '';
+    
+                    if (/\[(\W*)\]/.test(Config.HANDLERS)) {
+                        HANDLER = Config.HANDLERS.match(/\[(\W*)\]/)[1][0];
+                    } else {
+                        HANDLER = '.';
+                    }
 
         if (Config.ALIVEMSG == 'default') {
-            
+             
         var aliveimg = await axios.get (Config.ALIVE_LOGO, {responseType: 'arraybuffer'})
 
-        await message.client.sendMessage (message.jid, Buffer.from (aliveimg.data), MessageType.image, {mimetype: Mimetype.png, caption: '┌───[🐋𝙰𝚀𝚄𝙰𝙱𝙾𝚃 🐋]\n\n│```Hey, I\'m online now```\n\n│ ```Type``` ' + Config. CUS_PANEL + ' ```to get command list```\n\n│ _Version_: ```' + Config. VERSION + '```\n\n└─────────────◉'})
+        await message.client.sendMessage (message.jid, Buffer.from (aliveimg.data), MessageType.image, {mimetype: Mimetype.png, caption: '┌───[🐋𝙰𝚀𝚄𝙰𝙱𝙾𝚃 🐋]\n\n│```Hey, I\'m online now```\n\n│ ```Type``` ' + HANDLER + Config. CUS_PANEL + ' ```to get command list```\n\n│ _Version_: ```' + Config. VERSION + '```\n\n└─────────────◉'})
 
     }
     else {
