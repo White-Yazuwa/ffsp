@@ -3,7 +3,6 @@ const {MessageType,Mimetype} = require('@adiwajshing/baileys');
 const config = require('../config');
 const axios = require('axios');
 const { requestLyricsFor, requestAuthorFor, requestTitleFor, requestIconFor } = require("solenolyrics");
-const solenolyrics= require("solenolyrics"); 
 const fs = require('fs');
 const ytdl = require('ytdl-core');
 const ffmpeg = require('fluent-ffmpeg');
@@ -25,6 +24,7 @@ let wk = config.WORKTYPE == 'public' ? false : true
        var load = await message.client.sendMessage(message.jid,config.SONG_DOWN,MessageType.text, {quoted: message.data});
         let thumbnail = arama[0].thumbnail.replace(' ', '+');
         let title = arama[0].title.replace(' ', '+');
+        let title2 = arama[0].title
         let views = arama[0].views;
         let author = arama[0].author.name;
         let url = arama[0].url
@@ -47,7 +47,7 @@ let wk = config.WORKTYPE == 'public' ? false : true
                     });    
           
                 writer.addTag();
-                 const msg = '┌───[🐋𝙰𝚀𝚄𝙰𝙱𝙾𝚃🐋]\n\n  *📥SONG DOWNLODER*\n\n│🎧sᴏɴɢ: ' + title + '\n\n│ 👀ᴠɪᴇᴡs: ' + views + '\n\n│ 📹 ᴄʜᴀɴɴᴇʟ: ' + author + '\n\n│🖇️ᴜʀʟ: ' + url + '\n\n└───────────◉'
+                 const msg = '┌───[🐋𝙰𝚀𝚄𝙰𝙱𝙾𝚃🐋]\n\n  *📥SONG DOWNLODER*\n\n│🎧sᴏɴɢ: ' + title2 + '\n\n│ 👀ᴠɪᴇᴡs: ' + views + '\n\n│ 📹 ᴄʜᴀɴɴᴇʟ: ' + author + '\n\n│🖇️ᴜʀʟ: ' + url + '\n\n└───────────◉'
                 var iavatar = await axios.get(thumbnail,{responseType: 'arraybuffer'});
                  
        var up = await message.client.sendMessage(message.jid,config.SONG_UP,MessageType.text, {quoted: message.data});
