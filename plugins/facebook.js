@@ -12,7 +12,8 @@ Aqua.addCommand({ pattern: 'fb ?(.*)', fromMe: wk, desc:Lang.FB_DESC, deleteComm
   await axios.get(`https://sanuw-api.herokuapp.com/docs/download/fb?url=${fblink}&apikey=sanuwa`).then(async (response) => {
     if(!response.data.status) {
        const res =  await axios.get(`https://sanuw-api.herokuapp.com/docs/download/facebook?url=${fblink}&apikey=sanuwa`)
-        if(!res.data.staus) {
+        const link = res.data.result.data.HD
+       if(!link.includes('https')) {
     return await message.client.sendMessage(message.jid,Lang.E_FB, MessageType.text, { quoted: message.data });
         } else {
            var up= await message.client.sendMessage(message.jid,Lang.FB_UP, MessageType.text, { quoted: message.data });
