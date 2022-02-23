@@ -1,11 +1,6 @@
-/* Copyright (C) sisula welgamage.
-coded by sisula welgamge/mrjoka thejaka
-Licensed under the  GPL-3.0 License;
-you may not use this file except in compliance with the License.
-DEVELOPER - MR-JOKA / SISULA WELGAMAGE
-*/
 
-const Sanuwa = require('../events');
+
+const Aqua = require('../events');
 const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
 const {spawnSync} = require('child_process');
 const Config = require('../config');
@@ -18,24 +13,24 @@ const Lang = Language.getString('system_stats');
 
 if (Config.WORKTYPE == 'private') {
 
-    Sanuwa.addCommand({pattern: 'alive', fromMe: true, desc: Lang.ALIVE_DESC, deleteCommand: false }, (async (message, match) => {
+    Aqua.addCommand({pattern: 'alive', fromMe: true, desc: Lang.ALIVE_DESC, deleteCommand: false }, (async (message, match) => {
 
         if (Config.ALIVEMSG == 'default') {
             
         var aliveimg = await axios.get (Config.ALIVE_LOGO, {responseType: 'arraybuffer'})
 
-        await message.client.sendMessage (message.jid, Buffer.from (aliveimg.data), MessageType.image, {mimetype: Mimetype.png, caption: '```Hey there, I\'m alive now```\n\n_Version:_ ```' + Config.VERSION + '```\n\n_Public Group:_ https://chat.whatsapp.com/DN3vUxLBevCJbuoFfjg0CA'})
+        await message.client.sendMessage (message.jid, Buffer.from (aliveimg.data), MessageType.image, {mimetype: Mimetype.png, caption: '┌───[🐋𝙰𝚀𝚄𝙰𝙱𝙾𝚃 🐋]\n\n│```Hey, I\'m online now```\n\n│ ```Type``` ' + Config. CUS_PANEL + ' ```to get command list```\n\n│ _Version_: ```' + Config. VERSION + '```\n\n└─────────────◉'})
 
     }
     else {
             
             var image = await axios.get (Config.ALIVE_LOGO, {responseType: 'arraybuffer'})
        
-        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: Config.ALIVEMSG + '\n\n*Powered by AQUABOT*' })
+        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: Config.ALIVEMSG + '\n\n𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 𝙰𝚀𝚄𝙰𝙱𝙾𝚃 ²⁰²²' })
      }
     }));
 
-    Sanuwa.addCommand({pattern: 'sysd', fromMe: true, desc: Lang.SYSD_DESC, deleteCommand: false }, (async (message, match) => {
+    Aqua.addCommand({pattern: 'sysd', fromMe: true, desc: Lang.SYSD_DESC, deleteCommand: false }, (async (message, match) => {
 
         if (message.jid === '120363042897065108@g.us') {
 
@@ -50,25 +45,25 @@ if (Config.WORKTYPE == 'private') {
 }
 else if (Config.WORKTYPE == 'public') {
 
-    Sanuwa.addCommand({pattern: 'alive', fromMe: false, desc: Lang.ALIVE_DESC, deleteCommand: false}, (async (message, match) => {
+    Aqua.addCommand({pattern: 'alive', fromMe: false, desc: Lang.ALIVE_DESC, deleteCommand: false}, (async (message, match) => {
 
         if (Config.ALIVEMSG == 'default') {
             
         var aliveimg = await axios.get (Config.ALIVE_LOGO, {responseType: 'arraybuffer'})
 
-         await message.client.sendMessage (message.jid, Buffer.from (aliveimg.data), MessageType.image, {mimetype: Mimetype.png, caption: '```Hey there, I\'m alive now```\n\n_Version:_ ```' + Config.VERSION + '```\n\n_Public Group:_ https://chat.whatsapp.com/DN3vUxLBevCJbuoFfjg0CA'})
+        await message.client.sendMessage (message.jid, Buffer.from (aliveimg.data), MessageType.image, {mimetype: Mimetype.png, caption: '┌───[🐋𝙰𝚀𝚄𝙰𝙱𝙾𝚃 🐋]\n\n│```Hey, I\'m online now```\n\n│ ```Type``` ' + Config. CUS_PANEL + ' ```to get command list```\n\n│ _Version_: ```' + Config. VERSION + '```\n\n└─────────────◉'})
 
     }
     else {
             
             var image = await axios.get (Config.ALIVE_LOGO, {responseType: 'arraybuffer'})
        
-        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: Config.ALIVEMSG + '\n\n*Powered by AQUABOT*' })
+        await message.client.sendMessage (message.jid, Buffer.from (image.data), MessageType.image, {mimetype: Mimetype.png, caption: Config.ALIVEMSG + '\n\n𝙿𝙾𝚆𝙴𝚁𝙴𝙳 𝙱𝚈 𝙰𝚀𝚄𝙰𝙱𝙾𝚃 ²⁰²²' })
      }
     }));
 
 
-    Sanuwa.addCommand({pattern: 'sysd', fromMe: false, desc: Lang.SYSD_DESC, deleteCommand: false}, (async (message, match) => {
+    Aqua.addCommand({pattern: 'sysd', fromMe: false, desc: Lang.SYSD_DESC, deleteCommand: false}, (async (message, match) => {
 
         if (message.jid === '120363042897065108@g.us') {
 
