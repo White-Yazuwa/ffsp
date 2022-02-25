@@ -40,7 +40,7 @@ if (Config.WORKTYPE == 'private') {
             bottomText: bottomText,
         }, async function(err) {
             if(err) throw new Error(err)
-            await message.client.sendMessage(message.jid, fs.readFileSync('aqua-meme.png'), MessageType.image, { filename: 'aqua-meme.png', mimetype: Mimetype.png, caption: Config.CAPTION});
+            await message.client.sendMessage(message.jid, fs.readFileSync('aqua-meme.png'), MessageType.image, { filename: 'aqua-meme.png', mimetype: Mimetype.png, caption: Config.CAPTION, quoted: message.data});
             await info.delete();    
         });
     }));
@@ -78,7 +78,7 @@ else if (Config.WORKTYPE == 'public') {
             bottomText: bottomText,
         }, async function(err) {
             if(err) throw new Error(err)
-            await message.client.sendMessage(message.jid, fs.readFileSync('aqua-meme.png'), MessageType.image, { filename: 'aqua-meme.png', mimetype: Mimetype.png, caption: Config.CAPTION});
+            await message.client.sendMessage(message.jid, fs.readFileSync('aqua-meme.png'), MessageType.image, { filename: 'aqua-meme.png', mimetype: Mimetype.png, caption: Config.CAPTION, quoted: message.data });
             await info.delete();    
         });
     }));
