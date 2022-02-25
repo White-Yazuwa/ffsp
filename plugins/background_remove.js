@@ -44,7 +44,7 @@ if (Config.WORKTYPE == 'private') {
 		    fs.createWriteStream('rbg.png')
         );
     
-        await message.client.sendMessage(message.jid,fs.readFileSync('rbg.png'), MessageType.document, {filename: '🐋AquaBot 🐋.png', mimetype: Mimetype.png});
+        await message.client.sendMessage(message.jid,fs.readFileSync('rbg.png'), MessageType.document, {filename: '🐋AquaBot 🐋.png', mimetype: Mimetype.png, quoted: message.data});
         await load.delete();
     }));
 }
@@ -80,7 +80,7 @@ else if (Config.WORKTYPE == 'public') {
 		    fs.createWriteStream('rbg.png')
         );
     
-        await message.client.sendMessage(message.jid,fs.readFileSync('rbg.png'), MessageType.document, {filename: '🐋AquaBot 🐋.png', mimetype: Mimetype.png});
+        await message.client.sendMessage(message.jid,fs.readFileSync('rbg.png'), MessageType.document, {filename: '🐋AquaBot 🐋.png', mimetype: Mimetype.png, quoted: message.data});
         await load.delete();
     }));
     
