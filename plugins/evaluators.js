@@ -128,8 +128,8 @@ if (Config.LANG == 'SI') ldc = '*Link එකක් සමුවුණා!*'
 if (Config.LANG == 'EN') ldc = '*Link Detected!*'
 Aqua.addCommand({on: 'text', fromMe: false, deleteCommand: false, deleteCommand: false}, (async (message, match) => {
     if (antilink_var == 'true' && message.jid !== '905511384572-1616356915@g.us') {
-        let regex1 = new RegExp('http://')
-        let regex2 = new RegExp('https://')
+        let regex1 = new RegExp('chat.whatsapp.com')
+        let regex2 = new RegExp('https://wa.me')
         if (regex1.test(message.message)) {
             var us = await checkUsAdmin(message)
             var im = await checkImAdmin(message)
@@ -146,14 +146,7 @@ Aqua.addCommand({on: 'text', fromMe: false, deleteCommand: false, deleteCommand:
             await message.client.groupRemove(message.jid, [message.data.participant]);         
             await message.client.sendMessage(message.jid,ldc, MessageType.text, {quoted: message.data })
         }
-        else if (message.message.match(/((?:[.]com)\b)/i)) {
-            var us = await checkUsAdmin(message)
-            var im = await checkImAdmin(message)
-            if (!im) return;
-            if (us) return;
-            await message.client.groupRemove(message.jid, [message.data.participant]);         
-            await message.client.sendMessage(message.jid,ldc, MessageType.text, {quoted: message.data })
-        }
+      
     }
 }));
 Aqua.addCommand({pattern: 'term ?(.*)', fromMe: true, desc: Lang.TERM_DESC}, (async (message, match) => {
