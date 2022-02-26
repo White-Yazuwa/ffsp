@@ -70,7 +70,7 @@ if (Config.WORKTYPE == 'private') {
         `*${PHN_CREAT}* ${created_at}`
         
         await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.image, {
-          caption: msg +'\n'+ Config.CAPTION
+          caption: msg +'\n\n'+ Config.CAPTION, quoted: message.data
         })
       })
       .catch(
@@ -126,7 +126,7 @@ if (Config.WORKTYPE == 'public') {
         `*${PHN_CREAT}* ${created_at}`
         
         await message.sendMessage(Buffer.from(profileBuffer.data), MessageType.image, {
-          caption: msg +'\n'+ Config.CAPTION
+          caption: msg +'\n\n'+ Config.CAPTION , quoted: message.data
         })
       })
       .catch(
