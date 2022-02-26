@@ -1,11 +1,11 @@
 function successfullMessage(msg) {
-    return "✅ *SANUWABOT*:  ```" + msg + "```"
+    return "✅ *AQUA*:  ```" + msg + "```"
 }
 function errorMessage(msg) {
-    return "🛑 *SANUWABOT*:  ```" + msg + "```"
+    return "🛑 *AQUA*:  ```" + msg + "```"
 }
 function infoMessage(msg) {
-    return "⏺️ *SANUWABOT*:  ```" + msg + "```"
+    return "⏺️ *AQUA*:  ```" + msg + "```"
 }
 
 
