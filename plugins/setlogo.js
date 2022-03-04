@@ -48,7 +48,7 @@ Aqua.addCommand({ pattern: 'setalive ?(.*)', fromMe: true, dontAddCommandList: t
     if (!data.result.mimetype.includes('image')){
       return await message.client.sendMessage(message.jid,need_img,MessageType.text, {quoted: message.data});
     }else {
-  const ibb =  await axios.get('https://api.imgbb.com/1/upload?key=${config.IMGBB}&image=${result}')
+  const ibb =  await axios.get(`https://api.imgbb.com/1/upload?key=${config.IMGBB}&image=${result}`)
      if (!ibb.data.data)return await message.client.sendMessage(message.jid, no_apikey,MessageType.text, {quoted: message.data});
      if (ibb.statusText == 'OK'){                
         await heroku.patch(baseURI + '/config-vars', { 
@@ -78,8 +78,8 @@ Aqua.addCommand({ pattern: 'setstic ?(.*)', fromMe: true, dontAddCommandList: tr
     if (!result.includes('webp')){
       return await message.client.sendMessage(message.jid,need_stic,MessageType.text, {quoted: message.data});
     }else {
-  const ibb =  await axios.get('https://api.imgbb.com/1/upload?key=${config.IMGBB}&image=${result}')
-      if (!ibb.data.data)return await message.client.sendMessage(message.jid, no_apikey,MessageType.text, {quoted: message.data});
+  const ibb =  await axios.get(`https://api.imgbb.com/1/upload?key=${config.IMGBB}&image=${result}`)
+      if (ibb.data.data.url)return await message.client.sendMessage(message.jid, no_apikey,MessageType.text, {quoted: message.data});
       if (ibb.statusText == 'OK'){                
         await heroku.patch(baseURI + '/config-vars', { 
                     body: { 
