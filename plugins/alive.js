@@ -18,7 +18,7 @@ const Lang = Language.getString('system_stats');
        if (Config.ALIVE_STIC == 'default') {
        const sticker = await axios.get('https://i.ibb.co/XkWhjLh/Nt-OOzj-C3-HBAB.webp', {responseType: 'arraybuffer'})
        await message.client.sendMessage (message.jid, Buffer.from (sticker.data), MessageType.sticker, {quoted: message.data} )
-       }else { if (!match[1].includes('webp')){
+       }else { if (!Config.ALIVE_STIC.includes('webp')){
         const sticker = await axios.get('https://i.ibb.co/XkWhjLh/Nt-OOzj-C3-HBAB.webp', {responseType: 'arraybuffer'})
        await message.client.sendMessage (message.jid, Buffer.from (sticker.data), MessageType.sticker, {quoted: message.data} )
     }else{
