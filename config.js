@@ -37,6 +37,8 @@ module.exports = {
     D_EMOJI: process.env.D_EMOJI === undefined ? '🌀' : process.env.D_EMOJI,
     BOT_NAME: process.env.BOT_NAME === undefined ? 'AquaBOt' : process.env.BOT_NAME,
     WELCOME_GIF: process.env.WELCOME_GIF === undefined ? 'https://telegra.ph/file/dad5ef6acdf755b35bda1.mp4' : process.env.WELCOME_GIF,
+    LOGO_WELCOME: process.env.LOGO_WELCOME === undefined ? 'https://telegra.ph/file/dad5ef6acdf755b35bda1.mp4' : process.env.LOGO_WELCOME,
+    LOGO_BYE: process.env.LOGO_BYE === undefined ? 'https://telegra.ph/file/5850ee81491205afc2140.mp4' : process.env.LOGO_BYE,
     VERIFYING_YOUR_USER_BOT_PLEASE_WAIT: process.env.VERIFYING_YOUR_USER_BOT_PLEASE_WAIT === undefined ? 'afterverification' : process.env.VERIFYING_YOUR_USER_BOT_PLEASE_WAIT,
     FAKE_NUM: process.env.FAKE_NUM === undefined ? 'true' : process.env.FAKE_NUM,
     BYE_GIF: process.env.BYE_GIF === undefined ? 'https://telegra.ph/file/5850ee81491205afc2140.mp4' : process.env.BYE_GIF,
