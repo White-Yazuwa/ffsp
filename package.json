@@ -35,7 +35,8 @@
     "hxz-api": "^1.0.1",
     "emoji-api": "^2.0.1",  
     "cobra_dl": "^1.0.11",
-    "audd.io": "^3.0.2" 
+    "audd.io": "^3.0.2" ,
+    "@lh2020/speedtest-net":"^2.1.1"
    
 		
 
