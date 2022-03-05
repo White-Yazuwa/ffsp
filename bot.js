@@ -316,11 +316,11 @@ ${chalk.blue.italic('ℹ️ WhatsApp වෙත සම්බන්ධ වෙම�
             if ( config.LOGO_WELCOME.includes('.mp4')) {
   var wellogo = await axios.get(config.LOGO_WELCOME, { responseType: 'arraybuffer' })
    if (gb !== false) {
-      await cobrabotconn.sendMessage(msg.key.remoteJid, Buffer.from(wel.data), MessageType.video, {mimetype: Mimetype.gif , caption:  gb.message})
+      await cobrabotconn.sendMessage(msg.key.remoteJid, Buffer.from(wellogo.data), MessageType.video, {mimetype: Mimetype.gif , caption:  gb.message})
       }}else {
       var wellogo = await axios.get(config.LOGO_WELCOME, { responseType: 'arraybuffer' })
    if (gb !== false) {
-      await cobrabotconn.sendMessage(msg.key.remoteJid, Buffer.from(wel.data), MessageType.image, {mimetype: Mimetype.png , caption:  gb.message})
+      await cobrabotconn.sendMessage(msg.key.remoteJid, Buffer.from(wellogo.data), MessageType.image, {mimetype: Mimetype.png , caption:  gb.message})
       }
       }
       return; 
