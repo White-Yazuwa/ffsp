@@ -194,8 +194,8 @@
         },
 	 "IMGBB": {
         "description": "imgbb.com එකට ගිහින් ලොගින් වෙලා ලැබෙන apikey එක මෙහි යොදන්න.",
-        "required": true,
-        "value": "default"
+        "required": true
+        
         }   
     },
     "addons": [{
