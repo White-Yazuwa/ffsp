@@ -123,7 +123,7 @@ Aqua.addCommand({ pattern: 'setwelcome ?(.*)', fromMe: true, dontAddCommandList:
         
     }else if(data.result.mimetype.includes('video')){
         
-       const tele =  uploadByUrl(result)
+       const tele =  await uploadByUrl(result)
        await heroku.patch(baseURI + '/config-vars', { 
                     body: { 
                         ['LOGO_WELCOME']: tele.link
@@ -163,7 +163,7 @@ Aqua.addCommand({ pattern: 'setbye ?(.*)', fromMe: true, dontAddCommandList: tru
         
     }else if(data.result.mimetype.includes('video')){
         
-       const tele =  uploadByUrl(result)
+       const tele = await uploadByUrl(result)
        await heroku.patch(baseURI + '/config-vars', { 
                     body: { 
                         ['LOGO_BYE']: tele.link
