@@ -5,7 +5,7 @@ const Config = require('../config');
 let wk = Config.WORKTYPE == 'public' ? false : true
 const Language = require('../language');
 const Lang = Language.getString('mediafire');
-Aqua.addCommand({ pattern: 'mediafire ?(.*)', fromMe: true, desc:Lang.M_DESC, deleteCommand: false }, async (message, match) => {
+Aqua.addCommand({ pattern: 'mediafire ?(.*)', fromMe: wk, desc:Lang.M_DESC, deleteCommand: false }, async (message, match) => {
   const mlink = match[1]
   if (!mlink) return await message.client.sendMessage(message.jid,Lang.N_MLINK, MessageType.text, { quoted: message.data });
   if (!match[1].includes('mediafire')) return await message.client.sendMessage(message.jid,Lang.N_MLINK,MessageType.text, {quoted: message.data});
