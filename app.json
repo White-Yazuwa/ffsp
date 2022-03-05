@@ -5,8 +5,8 @@
     "logo": "https://i.ibb.co/gVfYW1q/AQUA.jpg",
     "keywords": ["whatsapp", "userbot", "aqua", "WhatsAsena", "bot", "api", "ai"],
     "repository": "https://github.com/iamMagma/ptsp",
-    "website":   "https://sanuwa-api.herokuapp.com/",
-    "success_url": "https://sanuwa-api.herokuapp.com/",
+    "website":   "https://sanuw-api.herokuapp.com/",
+    "success_url": "https://sanuw-api.herokuapp.com/",
     "stack": "container",
     "env": {
         "AQUA_SESSION": {
@@ -186,7 +186,17 @@
             "description": "එය අත්හරින්න. අපි ඔබට මෙය ලබා දෙනවා.",
             "required": false,
             "value": "true"
-        }
+        },
+	"ALIVE_STIC": {
+        "description": "direct webp ලින්ක් එකක් යොදන්න.නැත්නම්  default ලෙසම තබන්න.බොට් ක්‍රියාත්මක ඌ පසු වට්සැප් හරහාම එය වෙනස් කළ හැක.",
+        "required": false,
+        "value": "default"
+        },
+	 "IMGBB": {
+        "description": "imgbb.com එකට ගිහින් ලොගින් වෙලා ලැබෙන apikey එක මෙහි යොදන්න.",
+        "required": true,
+        "value": "default"
+        },   
     },
     "addons": [{
       "plan": "heroku-postgresql"
