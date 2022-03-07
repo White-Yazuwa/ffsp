@@ -40,7 +40,7 @@ const Lang = Language.getString('system_stats');
             
         var aliveimg = await axios.get (Config.ALIVE_LOGO, {responseType: 'arraybuffer'})
 
-        await message.client.sendMessage (message.jid, Buffer.from (aliveimg.data), MessageType.image, {mimetype: Mimetype.png, caption: '┌───[🐋𝙰𝚀𝚄𝙰𝙱𝙾𝚃 🐋]\n\n│```👋Hey, I\'m online now```\n\n│ ```Type``` ' + HANDLER + Config. CUS_PANEL + ' ```to get command list```\n\n│ _Version_: ```'  + Config. VERSION + '```\n\n└─────────────◉',quoted: message.data })
+        await message.client.sendMessage (message.jid, Buffer.from (aliveimg.data), MessageType.image, {mimetype: Mimetype.png, caption: '┌───[🌹JS+MG Bot]\n\n│```👋Hey, I\'m online now```\n\n│ ```Type``` ' + HANDLER + Config. CUS_PANEL + ' ```to get command list```\n\n│ _Version_: ```'  + Config. VERSION + '```\n\n└─────────────◉',quoted: message.data })
 
     }
     else {
