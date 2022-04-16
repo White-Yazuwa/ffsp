@@ -17,8 +17,8 @@ DATABASE_URL = process.env.DATABASE_URL === undefined ? './cobramain.db' : proce
 DEBUG = process.env.DEBUG === undefined ? false : convertToBool(process.env.DEBUG);
 
 module.exports = {
-    VERSION: '🌀AQUA 1.0 beta',
-    CHANNEL: 'https://t.me/',
+    VERSION: '💍3.0.0 [NPM]',
+    CHANNEL: 'https://t.me/AloraSupport',
     SESSION: process.env.AQUA_SESSION === undefined ? '' : process.env.AQUA_SESSION,
     ANTİLİNK: process.env.ANTİ_LİNK === undefined ? 'false' : process.env.ANTİ_LİNK,
     ANTIGROUP: process.env.ANTIGRP_LINK === undefined ? 'false' : process.env.ANTIGRP_LINK,
