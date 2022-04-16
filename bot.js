@@ -135,23 +135,23 @@ ${chalk.blue.italic('ℹ️ WhatsApp වෙත සම්බන්ධ වෙම�
         if (config.WORKTYPE == 'private') { 
          if (config.LANG == 'EN') { 
            
-             var privateen = '*AQUABOT Working as Private!⛲*\n\n```Please do not try plugins here. This is your LOG number.```\n\n```You can use commands in any other chat :)```\n\n*Your bot is working as private.*\n*To change it, use* \n.setvar WORK_TYPE:public\n\n\n```Thanks For Using AQUABOT 🐳```'
+             var privateen = '*𝖠𝖫𝖮𝖱𝖠 Working as Private!⛲*\n\n```Please do not try plugins here. This is your LOG number.```\n\n```You can use commands in any other chat :)```\n\n*Your bot is working as private.*\n*To change it, use* \n.setvar WORK_TYPE:public\n\n\n```Thanks For Using 𝖠𝖫𝖮𝖱𝖠 👸🏼```'
              await cobrabotconn.sendMessage(cobrabotconn.user.jid, Buffer.from(userjidlogo.data), MessageType.image, {mimetype: Mimetype.jpg, caption: privateen});
              
          } else if (config.LANG == 'SI') {
              
-             var privatesi = '*AQUABOT ප්‍රයිවට් ආකාරයට ක්‍රියා කරයි⛲*\n\n```කරුණාකර මෙහි plugins භාවිත නොකරන්න.මෙය ඔබගේ log අංකයයි.```\n\n```වෙනත් ඕනෑම chat එකක විධානයන් භාවිත කළ හැකිය.```\n\n*ඔබේ bot private ආකරයෙන් ක්‍රියාකරයි.*\n*එය වෙනස් කිරීමට* ,\n.setvar WORKTYPE:public\n*යන විධානය භාවිත කරන්න.*\n\n\n```AQUABOT භාවිත කරනවාට ස්තූතියි🐳```'
+             var privatesi = '*𝖠𝖫𝖮𝖱𝖠 ප්‍රයිවට් ආකාරයට ක්‍රියා කරයි⛲*\n\n```කරුණාකර මෙහි plugins භාවිත නොකරන්න.මෙය ඔබගේ log අංකයයි.```\n\n```වෙනත් ඕනෑම chat එකක විධානයන් භාවිත කළ හැකිය.```\n\n*ඔබේ bot private ආකරයෙන් ක්‍රියාකරයි.*\n*එය වෙනස් කිරීමට* ,\n.setvar WORKTYPE:public\n*යන විධානය භාවිත කරන්න.*\n\n\n```𝖠𝖫𝖮𝖱𝖠 භාවිත කරනවාට ස්තූතියි👸🏼```'
              await cobrabotconn.sendMessage(cobrabotconn.user.jid,Buffer.from(userjidlogo.data), MessageType.image, {mimetype: Mimetype.png, caption: privatesi})
         }
               }else if (config.WORKTYPE == 'public') { 
                   
          if (config.LANG == 'EN') { 
-            var publicen = '*AQUABOT Working as Public!⛲*\n\n```Please do not try plugins here. This is your LOG number.```\n\n```You can use commands in any other chat :)```\n\n*Your bot is working as public.*\n*To change it, use* \n.setvar WORK_TYPE:private\n\n\n```Thanks For Using AQUABOT 🐳```'
+            var publicen = '*𝖠𝖫𝖮𝖱𝖠 Working as Public!⛲*\n\n```Please do not try plugins here. This is your LOG number.```\n\n```You can use commands in any other chat :)```\n\n*Your bot is working as public.*\n*To change it, use* \n.setvar WORK_TYPE:private\n\n\n```Thanks For Using 𝖠𝖫𝖮𝖱𝖠 👸🏼```'
               await cobrabotconn.sendMessage(cobrabotconn.user.jid,Buffer.from(userjidlogo.data), MessageType.image, {mimetype: Mimetype.png, caption: publicen})
 
          } else if (config.LANG == 'SI') {
              
-             var publicsi = '*AQUABOT පබ්ලික් ආකාරයට ක්‍රියා කරයි⛲*\n\n```කරුණාකර මෙහි plugins භාවිත නොකරන්න.මෙය ඔබගේ log අංකයයි.```\n\n```වෙනත් ඕනෑම chat එකක විධානයන් භාවිත කළ හැකිය.```\n\n*ඔබේ bot public ආකරයෙන් ක්‍රියාකරයි.*\n*එය වෙනස් කිරීමට* ,\n.setvar WORKTYPE:private\n*යන විධානය භාවිත කරන්න.*\n\n\n```AQUABOT භාවිත කරනවාට ස්තූතියි🐳```'
+             var publicsi = '*𝖠𝖫𝖮𝖱𝖠 පබ්ලික් ආකාරයට ක්‍රියා කරයි⛲*\n\n```කරුණාකර මෙහි plugins භාවිත නොකරන්න.මෙය ඔබගේ log අංකයයි.```\n\n```වෙනත් ඕනෑම chat එකක විධානයන් භාවිත කළ හැකිය.```\n\n*ඔබේ bot public ආකරයෙන් ක්‍රියාකරයි.*\n*එය වෙනස් කිරීමට* ,\n.setvar WORKTYPE:private\n*යන විධානය භාවිත කරන්න.*\n\n\n```𝖠𝖫𝖮𝖱𝖠 භාවිත කරනවාට ස්තූතියි```'
               await cobrabotconn.sendMessage(cobrabotconn.user.jid,Buffer.from(userjidlogo.data), MessageType.image, {mimetype: Mimetype.png, caption: publicsi})
         }
        }
@@ -457,8 +457,8 @@ ${chalk.blue.italic('ℹ️ WhatsApp වෙත සම්බන්ධ වෙම�
                             if (config.NOLOG == 'true') return;
 
                             if (config.LANG == 'SI') {
-                                await cobrabotconn.sendMessage(cobrabotconn.user.jid, '*♦︎✧දෝෂ වාර්තාව (🐋AQUABOT 🐋)✧♦︎*' + 
-                                    '\n*AQUABOT දෝෂයක් සිදු වී ඇත!*'+
+                                await cobrabotconn.sendMessage(cobrabotconn.user.jid, '*♦︎✧දෝෂ වාර්තාව (🐋𝖠𝖫𝖮𝖱𝖠 🐋)✧♦︎*' + 
+                                    '\n*𝖠𝖫𝖮𝖱𝖠 දෝෂයක් සිදු වී ඇත!*'+
                                     '\n_මෙම දෝශ ලඝු සටහනෙහි ඔබේ අංකය හෝ සගයෙකුගේ අංකය ඇතුළත් විය හැකිය. කරුණාකර එය සමග සැලකිලිමත් වන්න!_' +
                                     '\n_දෝෂය පිළීබඳ Admin දැනුවත් කරන්න._' +
                                     '\n_උදව් සඳහා ඔබට අපගේ Whatsapp කණ්ඩායමට ලිවිය හැකිය._' +
@@ -467,7 +467,7 @@ ${chalk.blue.italic('ℹ️ WhatsApp වෙත සම්බන්ධ වෙම�
                                     , MessageType.text, {detectLinks: false});
 
                                 if (error.message.includes('URL')) {
-                                    return await cobrabotconn.sendMessage(cobrabotconn.user.jid, '*♦︎✧දෝෂ විසඳුම (🐋AQUABOT 🐋)✧♦︎*' + 
+                                    return await cobrabotconn.sendMessage(cobrabotconn.user.jid, '*♦︎✧දෝෂ විසඳුම (🐋𝖠𝖫𝖮𝖱𝖠 🐋)✧♦︎*' + 
                                         '\n========== ```දෝෂය කියවන්න!``` ==========' +
                                         '\n\n*ප්‍රධාන දෝෂය:* _සහය දක්වන්නේ නියත වශයෙන්ම URL පමණි_' +
                                         '\n*හේතුව:* _LOG අංකය තුළ මාධ්‍ය මෙවලම් (xmedia, ස්ටිකර් ..) භාවිතය._' +
@@ -476,7 +476,7 @@ ${chalk.blue.italic('ℹ️ WhatsApp වෙත සම්බන්ධ වෙම�
                                     );
                                 }
                                 else if (error.message.includes('SSL')) {
-                                    return await cobrabotconn.sendMessage(cobrabotconn.user.jid, '*♦︎✧දෝෂ විසඳුම (🐋AQUABOT 🐋)✧♦︎*' + 
+                                    return await cobrabotconn.sendMessage(cobrabotconn.user.jid, '*♦︎✧දෝෂ විසඳුම (🐋𝖠𝖫𝖮𝖱𝖠 🐋)✧♦︎*' + 
                                         '\n========== ```දෝෂය කියවන්න!``` ==========' +
                                         '\n\n*ප්‍රධාන දෝෂය:* _SQL දත්ත සමුදාය දෝෂය_' +
                                         '\n*හේතුව:* _දත්ත සමුදාය දූෂණය වීම._ ' +
@@ -485,7 +485,7 @@ ${chalk.blue.italic('ℹ️ WhatsApp වෙත සම්බන්ධ වෙම�
                                     );
                                 }
                                 else if (error.message.includes('split')) {
-                                    return await cobrabotconn.sendMessage(cobrabotconn.user.jid, '*♦︎✧දෝෂ විසඳුම (🐋AQUABOT 🐋)✧♦︎*' + 
+                                    return await cobrabotconn.sendMessage(cobrabotconn.user.jid, '*♦︎✧දෝෂ විසඳුම (🐋𝖠𝖫𝖮𝖱𝖠 🐋)✧♦︎*' + 
                                         '\n========== ```දෝෂය කියවන්න!``` ==========' +
                                         '\n\n*ප්‍රධාන දෝෂය:* _නිර්වචනය නොකළ බෙදීම_' +
                                         '\n*හේතුව:* _කණ්ඩායම් පරිපාලකයින්ට භාවිතා කළ හැකි විධානයන්ට බෙදීමේ ක්‍රියාකාරකම වරින් වර දැක ගැනීමට නොහැකි වේ._ ' +
@@ -494,7 +494,7 @@ ${chalk.blue.italic('ℹ️ WhatsApp වෙත සම්බන්ධ වෙම�
                                     );                               
                                 }
                                 else if (error.message.includes('Ookla')) {
-                                    return await cobrabotconn.sendMessage(cobrabotconn.user.jid, '*♦︎✧දෝෂ විසඳුම (🐋AQUABOT 🐋)✧♦︎*' + 
+                                    return await cobrabotconn.sendMessage(cobrabotconn.user.jid, '*♦︎✧දෝෂ විසඳුම (🐋𝖠𝖫𝖮𝖱𝖠 🐋)✧♦︎*' + 
                                         '\n========== ```දෝෂය කියවන්න!``` ==========' +
                                         '\n\n*Ana Hata:* _Ookla සේවාදායක සම්බන්ධතාවය_' +
                                         '\n*හේතුව:* _සේවාදායකයට වේගවත්ම දත්ත සම්ප්‍රේෂණය කිරීමට නොහැකි වීම._' +
@@ -503,7 +503,7 @@ ${chalk.blue.italic('ℹ️ WhatsApp වෙත සම්බන්ධ වෙම�
                                     );
                                 }
                                 else if (error.message.includes('params')) {
-                                    return await cobrabotconn.sendMessage(cobrabotconn.user.jid, '*♦︎✧දෝෂ විසඳුම (🐋AQUABOT 🐋)✧♦︎*' + 
+                                    return await cobrabotconn.sendMessage(cobrabotconn.user.jid, '*♦︎✧දෝෂ විසඳුම (🐋𝖠𝖫𝖮𝖱𝖠 🐋)✧♦︎*' + 
                                         '\n========== ```දෝෂය කියවන්න!``` ==========' +
                                         '\n\n*ප්‍රධාන දෝෂය:* _ඉල්ලූ ශ්‍රව්‍ය පරාමිතීන්_' +
                                         '\n*හේතුව:* _ලතින් හෝඩියේ පිටත TTS විධානය භාවිතා කිරීම._' +
@@ -512,7 +512,7 @@ ${chalk.blue.italic('ℹ️ WhatsApp වෙත සම්බන්ධ වෙම�
                                     );
                                 }
                                 else if (error.message.includes('unlink')) {
-                                    return await cobrabotconn.sendMessage(cobrabotconn.user.jid, '*♦︎✧දෝෂ විසඳුම (🐋AQUABOT 🐋)✧♦︎*' + 
+                                    return await cobrabotconn.sendMessage(cobrabotconn.user.jid, '*♦︎✧දෝෂ විසඳුම (🐋𝖠𝖫𝖮𝖱𝖠 🐋)✧♦︎*' + 
                                         '\n========== ```දෝෂය කියවන්න!``` ==========' +
                                         '\n\n*ප්‍රධාන දෝෂය:* _එවැනි ගොනුවක් හමු නොවීය.' +
                                         '\n*හේතුව:* _Plugin වැරදි කේතීකරණය._' +
@@ -521,7 +521,7 @@ ${chalk.blue.italic('ℹ️ WhatsApp වෙත සම්බන්ධ වෙම�
                                     );
                                 }
                                 else if (error.message.includes('404')) {
-                                    return await cobrabotconn.sendMessage(cobrabotconn.user.jid, '*♦︎✧දෝෂ විසඳුම (🐋AQUABOT 🐋)✧♦︎*' + 
+                                    return await cobrabotconn.sendMessage(cobrabotconn.user.jid, '*♦︎✧දෝෂ විසඳුම (🐋𝖠𝖫𝖮𝖱𝖠 🐋)✧♦︎*' + 
                                         '\n========== ```දෝෂය කියවන්න!``` ==========' +
                                         '\n\n*ප්‍රධාන දෝෂය:* _දෝෂ 404 HTTPS_' +
                                         '\n*හේතුව:* _හෙරෝකු Plugin යටතේ ඇති විධානයන් භාවිතා කිරීම හේතුවෙන් සේවාදායකය සමඟ සන්නිවේදනය කිරීමට නොහැකි විය._' +
@@ -530,7 +530,7 @@ ${chalk.blue.italic('ℹ️ WhatsApp වෙත සම්බන්ධ වෙම�
                                     );
                                 }
                                 else if (error.message.includes('reply.delete')) {
-                                    return await cobrabotconn.sendMessage(cobrabotconn.user.jid, '*♦︎✧දෝෂ විසඳුම (🐋AQUABOT 🐋)✧♦︎*' + 
+                                    return await cobrabotconn.sendMessage(cobrabotconn.user.jid, '*♦︎✧දෝෂ විසඳුම (🐋𝖠𝖫𝖮𝖱𝖠 🐋)✧♦︎*' + 
                                         '\n========== ```දෝෂය කියවන්න!``` ==========' +
                                         '\n\n*ප්‍රධාන දෝෂය:* _පිළිතුර මකන්න කාර්යය_' +
                                         '\n*හේතුව:* _IMG හෝ විකි විධානයන් භාවිතා කිරීම._' +
@@ -539,7 +539,7 @@ ${chalk.blue.italic('ℹ️ WhatsApp වෙත සම්බන්ධ වෙම�
                                     );
                                 }
                                 else if (error.message.includes('load.delete')) {
-                                    return await cobrabotconn.sendMessage(cobrabotconn.user.jid, '*♦︎✧දෝෂ විසඳුම (🐋AQUABOT 🐋)✧♦︎*' + 
+                                    return await cobrabotconn.sendMessage(cobrabotconn.user.jid, '*♦︎✧දෝෂ විසඳුම (🐋𝖠𝖫𝖮𝖱𝖠 🐋)✧♦︎*' + 
                                         '\n========== ```දෝෂය කියවන්න!``` ==========' +
                                         '\n\n*ප්‍රධාන දෝෂය:* _පිළිතුර මකන්න කාර්යය_' +
                                         '\n*හේතුව:* _IMG හෝ විකි විධානයන් භාවිතා කිරීම._' +
@@ -548,7 +548,7 @@ ${chalk.blue.italic('ℹ️ WhatsApp වෙත සම්බන්ධ වෙම�
                                     );
                                 }
                                 else if (error.message.includes('400')) {
-                                    return await cobrabotconn.sendMessage(cobrabotconn.user.jid, '*♦︎✧දෝෂ විසඳුම (🐋AQUABOT 🐋)✧♦︎*' + 
+                                    return await cobrabotconn.sendMessage(cobrabotconn.user.jid, '*♦︎✧දෝෂ විසඳුම (🐋𝖠𝖫𝖮𝖱𝖠 🐋)✧♦︎*' + 
                                         '\n========== ```දෝෂය කියවන්න!``` ==========' +
                                         '\n\n*ප්‍රධාන දෝෂය:* _Bailyes Action Error_ ' +
                                         '\n*හේතුව:* _නිශ්චිත හේතුව නොදනී. විකල්ප කිහිපයක්ම මෙම දෝෂය ඇති කිරීමට හේතු වන්නට ඇත._' +
@@ -557,7 +557,7 @@ ${chalk.blue.italic('ℹ️ WhatsApp වෙත සම්බන්ධ වෙම�
                                     );
                                 }
                                 else if (error.message.includes('decode')) {
-                                    return await cobrabotconn.sendMessage(cobrabotconn.user.jid, '*♦︎✧දෝෂ විසඳුම (🐋AQUABOT 🐋)✧♦︎*' + 
+                                    return await cobrabotconn.sendMessage(cobrabotconn.user.jid, '*♦︎✧දෝෂ විසඳුම (🐋𝖠𝖫𝖮𝖱𝖠 🐋)✧♦︎*' + 
                                         '\n========== ```දෝෂය කියවන්න!``` ==========' +
                                         '\n\n*ප්‍රධාන දෝෂය:* _පෙළ හෝ මාධ්‍ය විකේතනය කළ නොහැක_' +
                                         '\n*හේතුව:* _Plugin වැරදි ලෙස භාවිතා කිරීම._' +
@@ -566,7 +566,7 @@ ${chalk.blue.italic('ℹ️ WhatsApp වෙත සම්බන්ධ වෙම�
                                     );
                                 }
                                 else if (error.message.includes('unescaped')) {
-                                    return await cobrabotconn.sendMessage(cobrabotconn.user.jid, '*♦︎✧දෝෂ විසඳුම (🐋AQUABOT 🐋)✧♦︎*' + 
+                                    return await cobrabotconn.sendMessage(cobrabotconn.user.jid, '*♦︎✧දෝෂ විසඳුම (🐋𝖠𝖫𝖮𝖱𝖠 🐋)✧♦︎*' + 
                                         '\n========== ```දෝෂය කියවන්න!``` ==========' +
                                         '\n\n*ප්‍රධාන දෝෂය:* _Word Character Usage_' +
                                         '\n*හේතුව:* _ලතින් අකාරාදියෙන් TTP, ATTP වැනි විධානයන් භාවිතා කිරීම._' +
@@ -575,7 +575,7 @@ ${chalk.blue.italic('ℹ️ WhatsApp වෙත සම්බන්ධ වෙම�
                                     );
                                 }
                                 else if (error.message.includes('conversation')) {
-                                    return await cobrabotconn.sendMessage(cobrabotconn.user.jid, '*♦︎✧දෝෂ විසඳුම (🐋AQUABOT 🐋)✧♦︎*' + 
+                                    return await cobrabotconn.sendMessage(cobrabotconn.user.jid, '*♦︎✧දෝෂ විසඳුම (🐋𝖠𝖫𝖮𝖱𝖠 🐋)✧♦︎*' + 
                                         '\n========== ```දෝෂය කියවන්න!``` ==========' +
                                         '\n\n*ප්‍රධාන දෝෂය:* _Deleting Plugin_' +
                                         '\n*හේතුව:* _මැකීමට Plugin නම වැරදි ලෙස ඇතුළත් කිරීම._' +
@@ -591,7 +591,7 @@ ${chalk.blue.italic('ℹ️ WhatsApp වෙත සම්බන්ධ වෙම�
                                 }
                             }
                             else {
-                                await cobrabotconn.sendMessage(cobrabotconn.user.jid, '*-- ERROR REPORT [🐋AQUABOT 🐋] --*' + 
+                                await cobrabotconn.sendMessage(cobrabotconn.user.jid, '*-- ERROR REPORT [🐋𝖠𝖫𝖮𝖱𝖠 🐋] --*' + 
                                     '\n*COBRABOT an error has occurred!*'+
                                     '\n_This error log may include your number or the number of an opponent. Please be careful with it!_' +
                                     '\n_Aslo you can join our support group:_ https://chat.whatsapp.com/FgPh5cqjcw53qnAXQiBCK0' +
@@ -600,7 +600,7 @@ ${chalk.blue.italic('ℹ️ WhatsApp වෙත සම්බන්ධ වෙම�
                                     , MessageType.text, {detectLinks: false}
                                 );
                                 if (error.message.includes('URL')) {
-                                    return await cobrabotconn.sendMessage(cobrabotconn.user.jid, '*⚕️ ERROR ANALYSIS [🐋AQUABOT 🐋] ⚕️*' + 
+                                    return await cobrabotconn.sendMessage(cobrabotconn.user.jid, '*⚕️ ERROR ANALYSIS [🐋𝖠𝖫𝖮𝖱𝖠 🐋] ⚕️*' + 
                                         '\n========== ```Error Resolved!``` ==========' +
                                         '\n\n*Main Error:* _Only Absolutely URLs Supported_' +
                                         '\n*Reason:* _The usage of media tools (xmedia, sticker..) in the LOG number._' +
@@ -609,7 +609,7 @@ ${chalk.blue.italic('ℹ️ WhatsApp වෙත සම්බන්ධ වෙම�
                                     );
                                 }
                                 else if (error.message.includes('conversation')) {
-                                    return await cobrabotconn.sendMessage(cobrabotconn.user.jid, '*⚕️ ERROR ANALYSIS [🐋AQUABOT 🐋] ⚕️*' + 
+                                    return await cobrabotconn.sendMessage(cobrabotconn.user.jid, '*⚕️ ERROR ANALYSIS [🐋𝖠𝖫𝖮𝖱𝖠 🐋] ⚕️*' + 
                                         '\n========== ```Error Resolved!``` ==========' +
                                         '\n\n*Main Error:* _Deleting Plugin_' +
                                         '\n*Reason:* _Entering incorrectly the name of the plugin wanted to be deleted._' +
@@ -618,7 +618,7 @@ ${chalk.blue.italic('ℹ️ WhatsApp වෙත සම්බන්ධ වෙම�
                                     );
                                 }
                                 else if (error.message.includes('split')) {
-                                    return await cobrabotconn.sendMessage(cobrabotconn.user.jid, '*⚕️ ERROR ANALYSIS [🐋AQUABOT 🐋] ⚕️*' + 
+                                    return await cobrabotconn.sendMessage(cobrabotconn.user.jid, '*⚕️ ERROR ANALYSIS [🐋𝖠𝖫𝖮𝖱𝖠 🐋] ⚕️*' + 
                                         '\n========== ```Error Resolved!``` ==========' +
                                         '\n\n*Main Error:* _Split of Undefined_' +
                                         '\n*Reason:* _Commands that can be used by group admins occasionally dont see the split function._ ' +
@@ -627,7 +627,7 @@ ${chalk.blue.italic('ℹ️ WhatsApp වෙත සම්බන්ධ වෙම�
                                     );
                                 }
                                 else if (error.message.includes('SSL')) {
-                                    return await cobrabotconn.sendMessage(cobrabotconn.user.jid, '*⚕️ ERROR ANALYSIS [🐋AQUABOT 🐋] ⚕️*' + 
+                                    return await cobrabotconn.sendMessage(cobrabotconn.user.jid, '*⚕️ ERROR ANALYSIS [🐋𝖠𝖫𝖮𝖱𝖠 🐋] ⚕️*' + 
                                         '\n========== ```Error Resolved!``` ==========' +
                                         '\n\n*Main Error:* _SQL Database Error_' +
                                         '\n*Reason:* _Database corruption._ ' +
@@ -636,7 +636,7 @@ ${chalk.blue.italic('ℹ️ WhatsApp වෙත සම්බන්ධ වෙම�
                                     );
                                 }
                                 else if (error.message.includes('Ookla')) {
-                                    return await cobrabotconn.sendMessage(cobrabotconn.user.jid, '*⚕️ ERROR ANALYSIS [🐋AQUABOT 🐋] ⚕️*' + 
+                                    return await cobrabotconn.sendMessage(cobrabotconn.user.jid, '*⚕️ ERROR ANALYSIS [🐋𝖠𝖫𝖮𝖱𝖠 🐋] ⚕️*' + 
                                         '\n========== ```Error Resolved!``` ==========' +
                                         '\n\n*Main Error:* _Ookla Server Connection_' +
                                         '\n*Reason:* _Speedtest data cannot be transmitted to the server._' +
@@ -645,7 +645,7 @@ ${chalk.blue.italic('ℹ️ WhatsApp වෙත සම්බන්ධ වෙම�
                                     );
                                 }
                                 else if (error.message.includes('params')) {
-                                    return await cobrabotconn.sendMessage(cobrabotconn.user.jid, '*⚕️ ERROR ANALYSIS [🐋AQUABOT 🐋] ⚕️*' + 
+                                    return await cobrabotconn.sendMessage(cobrabotconn.user.jid, '*⚕️ ERROR ANALYSIS [🐋𝖠𝖫𝖮𝖱𝖠 🐋] ⚕️*' + 
                                         '\n========== ```Error Resolved!``` ==========' +
                                         '\n\n*Main Error:* _Requested Audio Params_' +
                                         '\n*Reason:* _Using the TTS command outside the Latin alphabet._' +
@@ -654,7 +654,7 @@ ${chalk.blue.italic('ℹ️ WhatsApp වෙත සම්බන්ධ වෙම�
                                     );
                                 }
                                 else if (error.message.includes('unlink')) {
-                                    return await cobrabotconn.sendMessage(cobrabotconn.user.jid, '*⚕️ ERROR ANALYSIS [🐋AQUABOT 🐋] ⚕️*' + 
+                                    return await cobrabotconn.sendMessage(cobrabotconn.user.jid, '*⚕️ ERROR ANALYSIS [🐋𝖠𝖫𝖮𝖱𝖠 🐋] ⚕️*' + 
                                         '\n========== ```Error Resolved``` ==========' +
                                         '\n\n*Main Error:* _No Such File or Directory_' +
                                         '\n*Reason:* _Incorrect coding of the plugin._' +
@@ -663,7 +663,7 @@ ${chalk.blue.italic('ℹ️ WhatsApp වෙත සම්බන්ධ වෙම�
                                     );
                                 }
                                 else if (error.message.includes('404')) {
-                                    return await cobrabotconn.sendMessage(cobrabotconn.user.jid, '*⚕️ ERROR ANALYSIS [🐋AQUABOT 🐋] ⚕️*' + 
+                                    return await cobrabotconn.sendMessage(cobrabotconn.user.jid, '*⚕️ ERROR ANALYSIS [🐋𝖠𝖫𝖮𝖱𝖠 🐋] ⚕️*' + 
                                         '\n========== ```Error Resolved!``` ==========' +
                                         '\n\n*Main Error:* _Error 404 HTTPS_' +
                                         '\n*Reason:* _Failure to communicate with the server as a result of using the commands under the Heroku plugin._' +
@@ -672,7 +672,7 @@ ${chalk.blue.italic('ℹ️ WhatsApp වෙත සම්බන්ධ වෙම�
                                     );
                                 }
                                 else if (error.message.includes('reply.delete')) {
-                                    return await cobrabotconn.sendMessage(cobrabotconn.user.jid, '*⚕️ ERROR ANALYSIS [🐋AQUABOT 🐋] ⚕️*' + 
+                                    return await cobrabotconn.sendMessage(cobrabotconn.user.jid, '*⚕️ ERROR ANALYSIS [🐋𝖠𝖫𝖮𝖱𝖠 🐋] ⚕️*' + 
                                         '\n========== ```Error Resolved!``` ==========' +
                                         '\n\n*Main Error:* _Reply Delete Function_' +
                                         '\n*Reason:* _Using IMG or Wiki commands._' +
@@ -681,7 +681,7 @@ ${chalk.blue.italic('ℹ️ WhatsApp වෙත සම්බන්ධ වෙම�
                                     );
                                 }
                                 else if (error.message.includes('load.delete')) {
-                                    return await cobrabotconn.sendMessage(cobrabotconn.user.jid, '*⚕️ ERROR ANALYSIS [🐋AQUABOT 🐋] ⚕️*' + 
+                                    return await cobrabotconn.sendMessage(cobrabotconn.user.jid, '*⚕️ ERROR ANALYSIS [🐋𝖠𝖫𝖮𝖱𝖠 🐋] ⚕️*' + 
                                         '\n========== ```Error Resolved!``` ==========' +
                                         '\n\n*Main Error:* _Reply Delete Function_' +
                                         '\n*Reason:* _Using IMG or Wiki commands._' +
@@ -690,7 +690,7 @@ ${chalk.blue.italic('ℹ️ WhatsApp වෙත සම්බන්ධ වෙම�
                                     );
                                 }
                                 else if (error.message.includes('400')) {
-                                    return await cobrabotconn.sendMessage(cobrabotconn.user.jid, '*⚕️ ERROR ANALYSIS [🐋AQUABOT 🐋] ⚕️*' + 
+                                    return await cobrabotconn.sendMessage(cobrabotconn.user.jid, '*⚕️ ERROR ANALYSIS [🐋𝖠𝖫𝖮𝖱𝖠 🐋] ⚕️*' + 
                                         '\n========== ```Error Resolved!``` ==========' +
                                         '\n\n*Main Error:* _Bailyes Action Error_ ' +
                                         '\n*Reason:* _The exact reason is unknown. More than one option may have triggered this error._' +
@@ -699,7 +699,7 @@ ${chalk.blue.italic('ℹ️ WhatsApp වෙත සම්බන්ධ වෙම�
                                     );
                                 }
                                 else if (error.message.includes('decode')) {
-                                    return await cobrabotconn.sendMessage(cobrabotconn.user.jid, '*⚕️ ERROR ANALYSIS [🐋AQUABOT 🐋] ⚕️*' + 
+                                    return await cobrabotconn.sendMessage(cobrabotconn.user.jid, '*⚕️ ERROR ANALYSIS [🐋𝖠𝖫𝖮𝖱𝖠 🐋] ⚕️*' + 
                                         '\n========== ```Error Resolved!``` ==========' +
                                         '\n\n*Main Error:* _Cannot Decode Text or Media_' +
                                         '\n*Reason:* _Incorrect use of the plug._' +
@@ -708,7 +708,7 @@ ${chalk.blue.italic('ℹ️ WhatsApp වෙත සම්බන්ධ වෙම�
                                     );
                                 }
                                 else if (error.message.includes('unescaped')) {
-                                    return await cobrabotconn.sendMessage(cobrabotconn.user.jid, '*⚕️ ERROR ANALYSIS [🐋AQUABOT 🐋] ⚕️*' + 
+                                    return await cobrabotconn.sendMessage(cobrabotconn.user.jid, '*⚕️ ERROR ANALYSIS [🐋𝖠𝖫𝖮𝖱𝖠 🐋] ⚕️*' + 
                                         '\n========== ```Error Resolved!``` ==========' +
                                         '\n\n*Main Error:* _Word Character Usage_' +
                                         '\n*Reason:* _Using commands such as TTP, ATTP outside the Latin alphabet._' +
