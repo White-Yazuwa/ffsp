@@ -31,6 +31,7 @@
   "homepage": "https://github.com/iamMagma/ptsp",
   "dependencies": {
    
+    "@adiwajshing/baileys": "3.5.2",
     "aquabot": "^1.0.0",
     "hxz-api": "^1.0.1",
     "emoji-api": "^2.0.1",  
